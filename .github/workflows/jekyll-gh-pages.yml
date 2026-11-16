@@ -1,5 +1,3 @@
-on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
   # Allows you to run this workflow manually from the Actions tab
@@ -30,7 +28,6 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-  # Deployment job
   deploy:
     environment:
       name: github-pages
