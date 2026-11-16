@@ -51,3 +51,7 @@ baseurl: ""
 # OU, se você for continuar usando o link padrão do GitHub Pages sem domínio próprio:
 # url: "https://purgatoriounder-p.github.io"
 # baseurl: "/purgatorio-sob"
+
+theme: jekyll-theme-minimal
+title: Octocat's homepage
+description: Bookmark this to keep an eye on my project updates!
