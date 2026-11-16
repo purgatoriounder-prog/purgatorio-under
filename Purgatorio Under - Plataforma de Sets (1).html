@@ -1,0 +1,3604 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>PURGATÓRIO UNDER — Luxury Underground Sonic Archive (+60 Min Sets)</title>
+<meta name="description" content="Plataforma exclusiva do coletivo Purgatório Under. Streaming proprietário de sets de longa duração (+60 min) em WAV 24-Bit e MP3 320kbps conectado ao Google Drive.">
+<meta name="keywords" content="Purgatório Under, Hard Techno, Industrial Techno, Schranz, DJ Sets, Acid Techno, F Minor, 150 BPM, Sets Longos, Belo Horizonte">
+<meta name="author" content="Purgatório Under (purgatoriounder@gmail.com)">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#030403">
+
+<!-- Open Graph -->
+<meta property="og:type" content="music.playlist">
+<meta property="og:title" content="PURGATÓRIO UNDER | Underground Techno Archive (+60 Min Sets)">
+<meta property="og:description" content="Sets exclusivos de longa duração do coletivo Purgatório Under em alta fidelidade.">
+<meta property="og:locale" content="pt_BR">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "Purgatório Under",
+  "email": "purgatoriounder@gmail.com",
+  "genre": ["Hard Techno", "Industrial", "Schranz", "Dark Techno"],
+  "description": "Coletivo underground e plataforma proprietária de streaming de sets de mais de 60 minutos."
+}
+</script>
+
+<!-- Google Fonts: Syne (Display), Inter (UI Editorial), JetBrains Mono (Technical Data) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg-abyss: #030403;
+  --glass-surface: rgba(14, 16, 15, 0.65);
+  --glass-elevated: rgba(20, 24, 22, 0.78);
+  --glass-dock: rgba(10, 12, 11, 0.86);
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-highlight: rgba(255, 255, 255, 0.14);
+  --border-neon: rgba(57, 255, 20, 0.38);
+  --neon: #39FF14;
+  --emerald: #00E676;
+  --neon-soft: rgba(57, 255, 20, 0.12);
+  --neon-glow: rgba(57, 255, 20, 0.35);
+  --text-main: #F4F4F6;
+  --text-muted: #9499A1;
+  --text-dim: #5E646E;
+  --danger: #FF3B5C;
+  --font-display: 'Syne', sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --ease-luxury: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition: all 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Remove barras de embed externas caso utilizado em iframe */
+.Y6M3Pb, .gb_Pa, [role="banner"][jsname], .docs-gm-banner {
+  display: none !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-abyss);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-abyss);
+  color: var(--text-main);
+  min-height: 100vh;
+  padding-bottom: 165px;
+  overflow-x: hidden;
+  position: relative;
+  line-height: 1.55;
+}
+
+/* Iluminação Ambiental Difusa de Fundo (Obsidian & Emerald) */
+.ambient-stage {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.ambient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(130px);
+  opacity: 0.08;
+  animation: floatAmbient 18s ease-in-out infinite alternate;
+}
+.ambient-orb.one {
+  width: 680px;
+  height: 680px;
+  background: radial-gradient(circle, #39FF14 0%, #10B981 45%, transparent 70%);
+  top: -220px;
+  left: -140px;
+}
+.ambient-orb.two {
+  width: 580px;
+  height: 580px;
+  background: radial-gradient(circle, #00E676 0%, #059669 50%, transparent 70%);
+  bottom: 5%;
+  right: -180px;
+  animation-delay: -7s;
+}
+@keyframes floatAmbient {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(40px, 30px) scale(1.12); }
+}
+
+/* Textura de Película Analógica Ultra Sutil */
+.film-grain {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 900;
+  opacity: 0.022;
+}
+
+svg { display: block; flex-shrink: 0; }
+button {
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  transition: var(--transition);
+}
+input, select, textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  transition: var(--transition);
+}
+
+::selection {
+  background: var(--neon);
+  color: #000000;
+}
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #050605; }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.14); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: var(--neon); }
+
+.container {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.chrome-text {
+  background: linear-gradient(135deg, #FFFFFF 0%, #E4E4E7 45%, #71717A 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.neon-gradient-text {
+  background: linear-gradient(90deg, #39FF14 0%, #00E676 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 18px rgba(57, 255, 20, 0.28));
+}
+
+/* ==========================================================================
+   FLOATING PILL HEADER (NAVBAR DE VIDRO FUMÊ)
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 14px;
+  z-index: 120;
+  padding: 0 16px;
+  margin-bottom: 24px;
+}
+.header-glass {
+  max-width: 1380px;
+  margin: 0 auto;
+  background: rgba(10, 12, 11, 0.72);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+@media (max-width: 860px) {
+  .header-glass {
+    border-radius: 22px;
+    flex-wrap: wrap;
+    padding: 12px 16px;
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: var(--text-main);
+  flex-shrink: 0;
+}
+.logo-emblem {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: radial-gradient(circle at 50% 35%, rgba(57, 255, 20, 0.2), rgba(8, 10, 9, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 0 24px rgba(57, 255, 20, 0.15);
+  transition: var(--transition);
+}
+.brand:hover .logo-emblem {
+  border-color: var(--border-neon);
+  transform: scale(1.04);
+  box-shadow: 0 0 28px rgba(57, 255, 20, 0.3);
+}
+.logo-emblem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.brand-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.brand-name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+.brand-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 3px;
+}
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--neon);
+  box-shadow: 0 0 8px var(--neon);
+  animation: pulseGlow 2.2s infinite;
+}
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.45; transform: scale(0.88); }
+}
+
+/* Command Palette Search Bar (Raycast / Spotlight Style) */
+.search-command {
+  flex: 1;
+  max-width: 460px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 860px) {
+  .search-command {
+    order: 3;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.search-command svg.search-icon {
+  position: absolute;
+  left: 16px;
+  width: 16px;
+  height: 16px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+.search-input {
+  width: 100%;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  padding: 0 74px 0 42px;
+  font-size: 13px;
+  color: var(--text-main);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.45);
+}
+.search-input::placeholder { color: var(--text-dim); }
+.search-input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.055);
+  border-color: var(--border-neon);
+  box-shadow: 0 0 24px rgba(57, 255, 20, 0.14), inset 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+.kbd-shortcut-pill {
+  position: absolute;
+  right: 12px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2px 8px;
+  border-radius: 999px;
+  pointer-events: none;
+}
+.search-clear {
+  position: absolute;
+  right: 48px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-main);
+  font-size: 10px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.search-clear.active { display: inline-flex; }
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.nav-pill-btn {
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+.nav-pill-btn:hover, .nav-pill-btn.active {
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--border-neon);
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.14);
+}
+.nav-pill-btn .badge-count {
+  background: var(--neon);
+  color: #000000;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 999px;
+}
+
+/* ==========================================================================
+   HERO SHOWCASE CINEMATOGRÁFICO (ESTILO BOILER ROOM / APPLE MUSIC)
+   ========================================================================== */
+.hero-showcase {
+  margin: 8px 0 36px;
+}
+.hero-card {
+  position: relative;
+  border-radius: 28px;
+  background: var(--glass-surface);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  padding: clamp(24px, 4vw, 44px);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.hero-backdrop-art {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.18;
+  filter: blur(36px) saturate(140%);
+  transform: scale(1.12);
+  transition: background-image 0.8s ease;
+  pointer-events: none;
+}
+.hero-backdrop-vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 18% 30%, rgba(14, 16, 15, 0.45) 0%, rgba(3, 4, 3, 0.94) 75%);
+  pointer-events: none;
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1.25fr 1fr;
+    gap: 40px;
+  }
+}
+
+.hero-badge-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.luxury-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(57, 255, 20, 0.08);
+  border: 1px solid rgba(57, 255, 20, 0.28);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--neon);
+  letter-spacing: 0.05em;
+}
+.code-pill-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.hero-headline {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4.2vw, 50px);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.04;
+  margin-bottom: 16px;
+}
+
+.hero-description {
+  font-size: 15px;
+  color: var(--text-muted);
+  max-width: 600px;
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+.hero-description strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+/* Master Hero Waveform Preview Box */
+.hero-master-deck {
+  background: rgba(5, 7, 6, 0.65);
+  border: 1px solid var(--border-subtle);
+  border-radius: 18px;
+  padding: 14px 18px;
+  margin-bottom: 24px;
+}
+.hero-deck-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+.hero-deck-title {
+  color: var(--text-main);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hero-wf-container {
+  position: relative;
+  height: 56px;
+  width: 100%;
+  cursor: pointer;
+}
+.hero-wf-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero-cta-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.btn-primary-glow {
+  height: 52px;
+  padding: 0 28px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #39FF14 0%, #00E676 100%);
+  color: #030403;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 10px 30px rgba(57, 255, 20, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+.btn-primary-glow:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 14px 38px rgba(57, 255, 20, 0.48);
+}
+.btn-glass-pill {
+  height: 52px;
+  padding: 0 22px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-highlight);
+  color: var(--text-main);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn-glass-pill:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--border-neon);
+  color: var(--neon);
+}
+
+/* Painel Lateral de Telemetria Acústica e Arte em Destaque */
+.telemetry-glass-card {
+  background: rgba(8, 10, 9, 0.72);
+  border: 1px solid var(--border-subtle);
+  border-radius: 22px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+.telemetry-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.now-playing-mini {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.now-playing-mini img {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid var(--border-highlight);
+}
+.viz-Segmented {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  padding: 3px;
+  border-radius: 999px;
+  gap: 2px;
+}
+.viz-btn {
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+}
+.viz-btn.active {
+  background: var(--neon);
+  color: #000000;
+  font-weight: 700;
+}
+
+.osc-stage {
+  position: relative;
+  height: 148px;
+  border-radius: 14px;
+  background: radial-gradient(circle at center, rgba(16, 24, 18, 0.6) 0%, rgba(4, 5, 4, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+.osc-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.telemetry-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.metric-box {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.metric-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--text-dim);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.metric-val {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+.metric-val.neon { color: var(--neon); }
+
+/* ==========================================================================
+   BARRA DE CONTROLE DE CATÁLOGO (ABAS, FILTROS & SELETOR DE LAYOUT)
+   ========================================================================== */
+.catalog-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.tab-group {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  padding: 4px;
+  border-radius: 999px;
+  gap: 4px;
+}
+.tab-pill {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.tab-pill:hover { color: var(--text-main); }
+.tab-pill.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-main);
+  border: 1px solid rgba(57, 255, 20, 0.35);
+  box-shadow: 0 0 18px rgba(57, 255, 20, 0.14);
+}
+.tab-pill .count {
+  font-size: 10px;
+  color: var(--neon);
+}
+
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.view-toggle {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  padding: 3px;
+  border-radius: 999px;
+}
+.view-btn {
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.view-btn.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--neon);
+  font-weight: 600;
+}
+
+.chips-scroll {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 2px 0 22px;
+}
+.chips-scroll::-webkit-scrollbar { display: none; }
+.filter-chip {
+  height: 34px;
+  padding: 0 15px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.filter-chip:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--text-main);
+}
+.filter-chip.active {
+  background: var(--neon-soft);
+  border-color: var(--border-neon);
+  color: var(--neon);
+  font-weight: 600;
+  box-shadow: 0 0 16px rgba(57, 255, 20, 0.12);
+}
+
+/* ==========================================================================
+   MODO 1: SOUNDCLOUD NEXT PRO PANORAMIC DECK ROWS (PADRÃO)
+   ========================================================================== */
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.catalog-grid-mode {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 22px;
+}
+
+.deck-card {
+  background: var(--glass-surface);
+  backdrop-filter: blur(24px) saturate(170%);
+  -webkit-backdrop-filter: blur(24px) saturate(170%);
+  border: 1px solid var(--border-subtle);
+  border-radius: 24px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 24px;
+  align-items: center;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 780px) {
+  .deck-card {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+.catalog-grid-mode .deck-card {
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.deck-card:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
+}
+.deck-card.playing {
+  border-color: var(--border-neon);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.75), 0 0 35px rgba(57, 255, 20, 0.1);
+}
+
+.deck-artwork {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #080908;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+}
+@media (max-width: 780px) {
+  .deck-artwork { aspect-ratio: 16 / 9; }
+}
+.catalog-grid-mode .deck-artwork {
+  aspect-ratio: 16 / 10;
+}
+.deck-artwork img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.65s var(--ease-luxury);
+}
+.deck-card:hover .deck-artwork img {
+  transform: scale(1.06);
+}
+.artwork-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.15) 55%, transparent 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play-orb {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(10, 12, 11, 0.78);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6);
+}
+.deck-card:hover .play-orb, .play-orb.playing {
+  background: var(--neon);
+  border-color: var(--neon);
+  color: #030403;
+  transform: scale(1.08);
+  box-shadow: 0 0 28px rgba(57, 255, 20, 0.55);
+}
+.artwork-badge-dur {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(5, 6, 5, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(57, 255, 20, 0.3);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--neon);
+}
+.artwork-badge-fmt {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(5, 6, 5, 0.78);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--text-main);
+}
+
+.deck-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+.deck-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.deck-meta-pills {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.meta-pill {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+}
+.meta-pill.neon {
+  background: rgba(57, 255, 20, 0.08);
+  border-color: rgba(57, 255, 20, 0.25);
+  color: var(--neon);
+  font-weight: 600;
+}
+.deck-title {
+  font-family: var(--font-display);
+  font-size: clamp(17px, 2vw, 21px);
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  cursor: pointer;
+}
+.deck-title:hover { color: var(--neon); }
+.deck-artist {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.deck-wf-box {
+  position: relative;
+  height: 62px;
+  background: rgba(5, 7, 6, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.deck-wf-box canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.deck-cues-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.deck-cues-bar::-webkit-scrollbar { display: none; }
+.mini-cue-pill {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.mini-cue-pill:hover {
+  border-color: var(--border-neon);
+  color: var(--neon);
+  background: rgba(57, 255, 20, 0.06);
+}
+
+.deck-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  flex-wrap: wrap;
+}
+.deck-tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tag-link {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.tag-link:hover { color: var(--neon); }
+
+.deck-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.action-pill {
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.action-pill:hover {
+  color: var(--text-main);
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+}
+.action-pill.fav.active {
+  color: var(--neon);
+  border-color: var(--border-neon);
+  background: rgba(57, 255, 20, 0.08);
+}
+.action-pill.danger:hover {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+/* ==========================================================================
+   FLOATING GLASS DOCK PLAYER (A ESTRELA DA TELA NA BASE)
+   ========================================================================== */
+.floating-dock-wrap {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  z-index: 350;
+  pointer-events: none;
+}
+.floating-dock {
+  pointer-events: auto;
+  max-width: 1360px;
+  margin: 0 auto;
+  background: var(--glass-dock);
+  backdrop-filter: blur(30px) saturate(190%);
+  -webkit-backdrop-filter: blur(30px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 26px;
+  padding: 12px 20px 14px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.88), 0 0 40px rgba(57, 255, 20, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Barra de Progresso Fina e Luminosa no Topo do Dock */
+.dock-timeline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.dock-time {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  min-width: 54px;
+}
+.dock-time.current { color: var(--neon); font-weight: 600; }
+.dock-rail {
+  flex: 1;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  touch-action: none;
+}
+.dock-track {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  position: relative;
+  overflow: hidden;
+  transition: height 0.2s ease;
+}
+.dock-rail:hover .dock-track { height: 6px; }
+.dock-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #00E676 0%, #39FF14 100%);
+  box-shadow: 0 0 12px var(--neon);
+  border-radius: 999px;
+}
+.loop-rail-highlight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(57, 255, 20, 0.35);
+  pointer-events: none;
+  display: none;
+}
+
+.dock-controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.dock-track-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  flex: 1;
+  cursor: pointer;
+}
+@keyframes vinylSpin { to { transform: rotate(360deg); } }
+.dock-Artwork {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  flex-shrink: 0;
+}
+.dock-Artwork.spinning {
+  border-radius: 50%;
+  border-color: var(--neon);
+  animation: vinylSpin 16s linear infinite;
+}
+.dock-meta-text {
+  min-width: 0;
+  flex: 1;
+}
+.dock-title {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text-main);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dock-sub {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px;
+}
+
+.dock-transport {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.dock-icon-btn {
+  height: 38px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.dock-icon-btn:hover, .dock-icon-btn.active {
+  color: var(--text-main);
+  border-color: var(--border-neon);
+  background: rgba(57, 255, 20, 0.08);
+}
+.dock-play-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #39FF14 0%, #00E676 100%);
+  color: #030403;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  box-shadow: 0 0 24px rgba(57, 255, 20, 0.42);
+}
+.dock-play-circle:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 32px rgba(57, 255, 20, 0.65);
+}
+
+.dock-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.dock-spectrum {
+  width: 96px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.dock-vol-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 110px;
+}
+input[type=range].luxury-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  outline: none;
+}
+input[type=range].luxury-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 2px solid var(--neon);
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--neon);
+}
+
+@media (max-width: 820px) {
+  .dock-spectrum, .dock-vol-box, .hide-sm { display: none !important; }
+}
+
+/* ==========================================================================
+   MODAL DE INSPEÇÃO STUDIO & PAINEL DE CURADORIA ADMIN
+   ========================================================================== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 420;
+  background: rgba(3, 4, 3, 0.88);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  display: none;
+  overflow-y: auto;
+  padding: 28px 16px 150px;
+}
+.modal-backdrop.open { display: block; }
+.modal-glass-sheet {
+  max-width: 1120px;
+  margin: 0 auto;
+  background: var(--glass-elevated);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 28px;
+  padding: clamp(20px, 3.5vw, 38px);
+  box-shadow: 0 35px 90px rgba(0, 0, 0, 0.9);
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 24px;
+}
+.detail-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 26px;
+}
+@media (min-width: 820px) {
+  .detail-hero { grid-template-columns: 280px 1fr; align-items: center; }
+}
+.detail-art {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.detail-art img { width: 100%; height: 100%; object-fit: cover; }
+
+.studio-wf-stage {
+  background: rgba(4, 6, 5, 0.72);
+  border: 1px solid var(--border-subtle);
+  border-radius: 22px;
+  padding: 20px;
+  margin-bottom: 22px;
+}
+.studio-wf-wrap {
+  position: relative;
+  height: 140px;
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+  touch-action: none;
+}
+.studio-wf-canvas { width: 100%; height: 100%; display: block; }
+.wf-hover-pill {
+  position: absolute;
+  top: -36px;
+  transform: translateX(-50%);
+  background: rgba(10, 12, 11, 0.95);
+  border: 1px solid var(--neon);
+  color: var(--text-main);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  pointer-events: none;
+  display: none;
+  white-space: nowrap;
+}
+
+.studio-console {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--border-subtle);
+  border-radius: 22px;
+  padding: 20px;
+}
+@media (min-width: 900px) {
+  .studio-console { grid-template-columns: 1.2fr 1fr; align-items: center; }
+}
+.eq-3band {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.eq-col {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+.eq-kill {
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  font-size: 9px;
+  color: var(--text-muted);
+  align-self: flex-start;
+}
+.eq-kill.killed {
+  background: rgba(255, 59, 92, 0.18);
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+/* Admin Section */
+.admin-drawer {
+  display: none;
+  margin: 28px 0 40px;
+}
+.admin-drawer.active { display: block; }
+.admin-glass-panel {
+  background: var(--glass-elevated);
+  backdrop-filter: blur(28px);
+  border: 1px solid var(--border-neon);
+  border-radius: 28px;
+  padding: clamp(22px, 4vw, 38px);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8), 0 0 40px rgba(57, 255, 20, 0.08);
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 20px;
+}
+@media (min-width: 760px) {
+  .form-grid { grid-template-columns: repeat(2, 1fr); }
+  .span2 { grid-column: span 2; }
+}
+.field-group { display: flex; flex-direction: column; gap: 6px; }
+.field-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.glass-input, .glass-textarea, .glass-select {
+  width: 100%;
+  background: rgba(5, 7, 6, 0.65);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 12px 15px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-main);
+}
+.glass-input:focus, .glass-textarea:focus, .glass-select:focus {
+  outline: none;
+  border-color: var(--border-neon);
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.14);
+}
+.glass-textarea { min-height: 86px; resize: vertical; }
+
+.dropzone-luxury {
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  background: rgba(5, 7, 6, 0.45);
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  min-height: 136px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.dropzone-luxury.drag {
+  border-color: var(--neon);
+  background: rgba(57, 255, 20, 0.06);
+}
+.preview-box {
+  display: none;
+  position: relative;
+  width: 180px;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--neon);
+}
+.preview-box.has { display: block; }
+.preview-box img { width: 100%; height: 100%; object-fit: cover; }
+.preview-remove {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF;
+  font-size: 11px;
+}
+
+/* Queue Drawer Lateral */
+.queue-drawer {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  bottom: 118px;
+  width: min(400px, calc(100% - 32px));
+  background: rgba(12, 14, 13, 0.9);
+  backdrop-filter: blur(28px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  z-index: 360;
+  transform: translateX(110%);
+  transition: transform 0.36s var(--ease-luxury);
+  display: flex;
+  flex-direction: column;
+  box-shadow: -20px 0 60px rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+}
+.queue-drawer.open { transform: translateX(0); }
+.queue-list { flex: 1; overflow-y: auto; padding: 10px; }
+.q-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+.q-row:hover { background: rgba(255, 255, 255, 0.05); }
+.q-row.active {
+  background: rgba(57, 255, 20, 0.08);
+  border: 1px solid rgba(57, 255, 20, 0.25);
+}
+.q-row img { width: 42px; height: 42px; border-radius: 10px; object-fit: cover; }
+
+/* Dialogs & Toasts */
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 480;
+  background: rgba(3, 4, 3, 0.86);
+  backdrop-filter: blur(16px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.dialog-overlay.open { display: flex; }
+.dialog-card {
+  background: var(--glass-elevated);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 24px;
+  padding: 28px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9);
+}
+
+.toasts {
+  position: fixed;
+  top: 86px;
+  right: 20px;
+  z-index: 550;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 360px;
+  pointer-events: none;
+}
+.toast {
+  pointer-events: auto;
+  padding: 13px 18px;
+  border-radius: 16px;
+  background: rgba(14, 18, 16, 0.92);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--border-neon);
+  color: var(--text-main);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75);
+}
+.toast.error { border-color: var(--danger); }
+
+.site-footer {
+  margin-top: 64px;
+  padding: 32px 0;
+  border-top: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-dim);
+}
+.kbd-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+.kbd-row kbd {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2px 8px;
+  border-radius: 6px;
+  color: var(--neon);
+}
+.hidden { display: none !important; }
+</style>
+</head>
+<body>
+
+<!-- LUZES AMBIENTAIS DIFUSAS DE FUNDO -->
+<div class="ambient-stage" aria-hidden="true">
+  <div class="ambient-orb one"></div>
+  <div class="ambient-orb two"></div>
+</div>
+
+<!-- PELÍCULA DE GRÃO ANALÓGICO SUTIL -->
+<svg class="film-grain" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/></filter>
+  <rect width="100%" height="100%" filter="url(#grain)"/>
+</svg>
+
+<div id="toasts" class="toasts" aria-live="polite"></div>
+
+<!-- ==========================================================================
+     FLOATING PILL HEADER COM A LOGO OFICIAL CYBER-GÓTICA
+     ========================================================================== -->
+<header class="site-header">
+  <div class="header-glass">
+    <a href="#" class="brand" id="brandLink" aria-label="Purgatório Under — Início">
+      <div class="logo-emblem" id="brandLogoContainer">
+        <!-- Escudo Oficial Cyber-Gótico com Serpente Biomecânica e Tipografia Metálica -->
+        <svg viewBox="0 0 240 240" width="44" height="44" aria-hidden="true">
+          <defs>
+            <radialGradient id="puGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#39FF14" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#030403" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="puChrome" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFFFFF"/>
+              <stop offset="48%" stop-color="#A1A1AA"/>
+              <stop offset="100%" stop-color="#27272A"/>
+            </linearGradient>
+            <linearGradient id="puAcid" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#FFFFFF"/>
+              <stop offset="52%" stop-color="#39FF14"/>
+              <stop offset="100%" stop-color="#059669"/>
+            </linearGradient>
+          </defs>
+          <circle cx="120" cy="120" r="112" fill="url(#puGlow)"/>
+          <path d="M120 10 L138 56 C160 56 178 68 186 84 C190 62 182 44 175 36 C198 54 208 84 202 114 L214 106 L194 148 L184 136 C172 165 152 182 136 188 L120 232 L104 188 C88 182 68 165 56 136 L46 148 L26 106 L38 114 C32 84 42 54 65 36 C58 44 50 62 54 84 C62 68 80 56 102 56 Z" fill="url(#puChrome)" stroke="#39FF14" stroke-width="2.5"/>
+          <circle cx="120" cy="122" r="56" fill="#050806" stroke="#39FF14" stroke-width="3.5"/>
+          <polygon points="120,14 104,72 136,72" fill="url(#puChrome)"/>
+          <polygon points="104,162 136,162 120,228" fill="url(#puChrome)"/>
+          <path d="M88 78 Q112 52 138 68 L158 76 L146 86 L126 78 Q108 66 88 78 Z" fill="#39FF14" stroke="#FFFFFF" stroke-width="1.2"/>
+          <polygon points="18,86 222,86 208,166 32,166" fill="#040504" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+          <text x="120" y="122" text-anchor="middle" font-family="Syne, sans-serif" font-weight="800" font-size="27" fill="url(#puAcid)">PURGATORIO</text>
+          <text x="120" y="156" text-anchor="middle" font-family="Syne, sans-serif" font-weight="800" font-size="33" fill="url(#puChrome)">UNDER</text>
+        </svg>
+      </div>
+      <div class="brand-text-wrap">
+        <span class="brand-name chrome-text">PURGATÓRIO UNDER</span>
+        <span class="brand-tag"><span class="status-dot"></span>SONIC VAULT • +60M</span>
+      </div>
+    </a>
+
+    <!-- Command Palette Search -->
+    <div class="search-command">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" id="search" class="search-input" placeholder="Buscar sets, 150 BPM, F Minor, Schranz..." aria-label="Buscar sets">
+      <button type="button" id="searchClear" class="search-clear" aria-label="Limpar">✕</button>
+      <span class="kbd-shortcut-pill">⌘K /</span>
+    </div>
+
+    <!-- Ações Rápidas -->
+    <div class="header-actions">
+      <button type="button" id="queueBtn" class="nav-pill-btn" aria-label="Fila de reprodução">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>
+        <span class="hide-sm">FILA</span>
+        <span id="queueBadge" class="badge-count hidden">0</span>
+      </button>
+
+      <button type="button" id="kbdBtn" class="nav-pill-btn hide-sm" title="Atalhos de teclado">
+        <span>⌨</span>
+      </button>
+
+      <button type="button" id="adminBtn" class="nav-pill-btn" aria-label="Curadoria Admin">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span class="hide-sm">CURADORIA</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ==========================================================================
+     CONTEÚDO PRINCIPAL
+     ========================================================================== -->
+<main class="container">
+
+  <!-- HERO SHOWCASE CINEMATOGRÁFICO -->
+  <section class="hero-showcase" aria-label="Transmissão Principal">
+    <div class="hero-card">
+      <div id="heroBackdropArt" class="hero-backdrop-art"></div>
+      <div class="hero-backdrop-vignette"></div>
+
+      <div class="hero-grid">
+        <div>
+          <div class="hero-badge-row">
+            <span class="luxury-badge"><span class="status-dot"></span>ARQUIVO SONORO PROPRIETÁRIO • STREAMING</span>
+            <span class="code-pill-email">purgatoriounder@gmail.com</span>
+          </div>
+
+          <h1 class="hero-headline">
+            <span class="chrome-text">TRANSMISSÃO CONTÍNUA DE SETS</span><br>
+            <span class="neon-gradient-text">+60 MINUTOS</span> <span class="chrome-text">EM ALTA FIDELIDADE.</span>
+          </h1>
+
+          <p class="hero-description">
+            Plataforma exclusiva do coletivo <strong>Purgatório Under</strong>. Curadoria fechada de <strong>Hard Techno</strong>, <strong>Industrial</strong> e <strong>Schranz</strong> em <strong>WAV 24-Bit</strong> e <strong>MP3 320kbps</strong> transmitidos diretamente do Google Drive Master Vault com ondas interativas, Cue Points e Isolador DJ EQ.
+          </p>
+
+          <!-- Master Waveform Interativa Direto no Hero -->
+          <div class="hero-master-deck">
+            <div class="hero-deck-header">
+              <span id="heroActiveTitle" class="hero-deck-title">APOTHEOOTIC — RITUAL DE FERRO &amp; SUBMUNDO #01</span>
+              <span id="heroActiveTime" style="color:var(--neon)">00:00:00 / 01:26:20</span>
+            </div>
+            <div id="heroWfWrap" class="hero-wf-container" title="Clique em qualquer ponto da onda para tocar">
+              <canvas id="heroWfCanvas" class="hero-wf-canvas"></canvas>
+            </div>
+          </div>
+
+          <div class="hero-cta-row">
+            <button type="button" id="heroPlay" class="btn-primary-glow">
+              <span id="heroIcon">▶</span>
+              <span id="heroText">INICIAR TRANSMISSÃO</span>
+            </button>
+            <button type="button" id="heroInspect" class="btn-glass-pill">
+              <span>STUDIO WAVEFORM &amp; CUE POINTS</span>
+              <span>↗</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Painel de Telemetria Acústica e Osciloscópio -->
+        <div class="telemetry-glass-card">
+          <div class="telemetry-top">
+            <div class="now-playing-mini">
+              <img id="heroMiniThumb" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80" alt="Capa ativa">
+              <div style="min-width:0">
+                <div id="telemetryName" style="font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--text-main);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">STANDBY • MASTER DECK</div>
+                <div style="font-family:var(--font-mono);font-size:10px;color:var(--neon)">WEB AUDIO API • 32-BIT FLOAT DSP</div>
+              </div>
+            </div>
+
+            <div class="viz-Segmented" role="group" aria-label="Modo do analisador">
+              <button type="button" class="viz-btn active" data-viz="bars">SPECTRUM</button>
+              <button type="button" class="viz-btn" data-viz="scope">SCOPE</button>
+              <button type="button" class="viz-btn" data-viz="radial">RADIAL</button>
+            </div>
+          </div>
+
+          <div class="osc-stage">
+            <canvas id="oscCanvas" class="osc-canvas" aria-label="Analisador acústico em tempo real"></canvas>
+          </div>
+
+          <div class="telemetry-metrics">
+            <div class="metric-box">
+              <span class="metric-label">CATÁLOGO</span>
+              <span class="metric-val" id="statCount">03 SETS</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-label">BPM / TOM</span>
+              <span class="metric-val neon" id="statBpm">150 • F Minor</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-label">ENGINE</span>
+              <span class="metric-val" id="statSource">SYNTH / DRIVE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAINEL DE CURADORIA EXCLUSIVO (purgatoriounder@gmail.com) -->
+  <section id="adminSection" class="admin-drawer" aria-label="Estúdio de Curadoria">
+    <div class="admin-glass-panel">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-bottom:18px;border-bottom:1px solid var(--border-subtle)">
+        <div>
+          <span style="font-family:var(--font-mono);font-size:11px;color:var(--neon)">● ADMINISTRADOR AUTENTICADO: purgatoriounder@gmail.com</span>
+          <h2 id="adminFormHeading" style="font-family:var(--font-display);font-size:22px;font-weight:800;margin-top:4px">CURADORIA MASTER &amp; CONEXÃO GOOGLE DRIVE</h2>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="nav-pill-btn" style="cursor:pointer">
+            <span>TROCAR LOGO OFICIAL</span>
+            <input type="file" id="logoUploadInput" accept="image/*" style="display:none">
+          </label>
+          <button type="button" id="exportJsonBtn" class="nav-pill-btn">EXPORTAR JSON</button>
+          <button type="button" id="importJsonBtn" class="nav-pill-btn">IMPORTAR JSON</button>
+          <input type="file" id="importJsonFile" accept=".json,application/json" style="display:none">
+          <button type="button" id="gasBtn" class="nav-pill-btn">API SHEETS</button>
+          <button type="button" id="closeAdminBtn" class="nav-pill-btn">FECHAR ✕</button>
+        </div>
+      </div>
+
+      <form id="publishForm" class="form-grid">
+        <input type="hidden" id="editId" value="">
+        <div class="field-group span2">
+          <label class="field-label" for="fTitle">TÍTULO DO SET (+60 MINUTOS) *</label>
+          <input type="text" id="fTitle" class="glass-input" required placeholder="Ex: PURGATÓRIO UNDER #04 — INDUSTRIAL BUNKER SESSION">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="fArtist">ARTISTA / RESIDENTE *</label>
+          <input type="text" id="fArtist" class="glass-input" required value="Apotheootic • Purgatório Under">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="fDrive">LINK COMPARTILHADO DO GOOGLE DRIVE (MP3 / WAV)</label>
+          <input type="url" id="fDrive" class="glass-input" placeholder="https://drive.google.com/file/d/1ABC...XYZ/view?usp=sharing">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="fBpm">BPM *</label>
+          <input type="number" id="fBpm" class="glass-input" min="80" max="240" required value="150">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="fKey">TOM MUSICAL *</label>
+          <input type="text" id="fKey" class="glass-input" required value="F Minor">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="fDuration">DURAÇÃO (HH:MM:SS) *</label>
+          <input type="text" id="fDuration" class="glass-input" required value="01:26:20">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="fFormat">FORMATO DE MASTERIZAÇÃO</label>
+          <select id="fFormat" class="glass-select">
+            <option value="WAV 24-BIT">WAV 24-BIT</option>
+            <option value="MP3 320KBPS">MP3 320KBPS</option>
+            <option value="FLAC MASTER">FLAC MASTER</option>
+          </select>
+        </div>
+        <div class="field-group span2">
+          <label class="field-label" for="fTags">TAGS DE ESTILO (SEPARADAS POR VÍRGULA)</label>
+          <input type="text" id="fTags" class="glass-input" value="Hard Techno, Industrial, F Minor, +60 Min">
+        </div>
+        <div class="field-group span2">
+          <label class="field-label" for="fLocalFile">OU CARREGUE UM ARQUIVO DE ÁUDIO LOCAL (.MP3 / .WAV — DECODIFICA WAVEFORM REAL)</label>
+          <input type="file" id="fLocalFile" accept="audio/*" class="glass-input">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="fDesc">MANIFESTO / DESCRIÇÃO DA SESSÃO</label>
+          <textarea id="fDesc" class="glass-textarea" placeholder="Equipamentos utilizados, atmosfera da pista, síntese..."></textarea>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="fCues">CUE POINTS / TRACKLIST (TEMPO + TÍTULO POR LINHA)</label>
+          <textarea id="fCues" class="glass-textarea">00:00 Intro Abissal
+19:00 Rumble F-Minor
+46:30 Trance Synth Peak
+01:09:00 Industrial Finale</textarea>
+        </div>
+        <div class="field-group span2">
+          <label class="field-label">ARTE DA CAPA (ARRASTE E SOLTE OU CLIQUE)</label>
+          <div id="dropzone" class="dropzone-luxury" tabindex="0" role="button" aria-label="Arraste a capa do set aqui">
+            <div id="dzPrompt">
+              <p style="font-family:var(--font-mono);font-size:12px;color:var(--text-main)">Arraste e solte a arte do set aqui ou clique para selecionar</p>
+              <p style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted);margin-top:4px">JPG, PNG ou WebP em alta resolução</p>
+            </div>
+            <div id="dzPreview" class="preview-box">
+              <img id="dzImg" src="" alt="Preview da capa">
+              <button type="button" id="dzRemove" class="preview-remove" aria-label="Remover capa">✕</button>
+            </div>
+            <input type="file" id="dzFile" accept="image/*" style="display:none">
+          </div>
+        </div>
+        <div class="field-group span2" style="display:flex;gap:12px;flex-direction:row;margin-top:6px">
+          <button type="submit" id="publishBtn" class="btn-primary-glow" style="flex:1;justify-content:center">
+            <span id="pubText">PUBLICAR SET NO CATÁLOGO</span>
+          </button>
+          <button type="button" id="cancelEditBtn" class="btn-glass-pill hidden">CANCELAR EDIÇÃO</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- BARRA DE FERRAMENTAS DO CATÁLOGO -->
+  <div class="catalog-toolbar">
+    <div class="tab-group" id="mainTabs">
+      <button type="button" class="tab-pill active" data-tab="catalog">MASTER VAULT <span class="count" id="tabCatalogCount">3</span></button>
+      <button type="button" class="tab-pill" data-tab="favorites">FAVORITOS <span class="count" id="tabFavCount">0</span></button>
+      <button type="button" class="tab-pill" data-tab="recent">HISTÓRICO <span class="count" id="tabRecentCount">0</span></button>
+    </div>
+
+    <div class="toolbar-right">
+      <span id="counter" style="font-family:var(--font-mono);font-size:11px;color:var(--text-muted)">3 SETS DISPONÍVEIS</span>
+      <button type="button" id="shuffleBtn" class="nav-pill-btn" style="height:34px;font-size:10px">🔀 SHUFFLE</button>
+      <div class="view-toggle" role="group" aria-label="Alternar visualização">
+        <button type="button" class="view-btn active" id="viewDeckBtn" title="Decks Panorâmicos (SoundCloud Pro)">☰ DECKS</button>
+        <button type="button" class="view-btn" id="viewGridBtn" title="Grid de Álbuns">⊞ GRID</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHIPS DE FILTRO RÁPIDO -->
+  <div class="chips-scroll" id="chips" role="tablist" aria-label="Filtrar por estilo ou BPM"></div>
+
+  <!-- CONTAINER DE SETS -->
+  <section aria-label="Catálogo de Sets">
+    <div id="grid" class="catalog-list"></div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
+    <div>
+      <span style="color:var(--text-main);font-weight:700">PURGATÓRIO UNDER</span> • LUXURY UNDERGROUND SONIC ARCHIVE • BELO HORIZONTE / BERLIN
+    </div>
+    <div style="display:flex;gap:18px">
+      <a href="#admin" id="footerAdmin" style="color:var(--neon);text-decoration:none">[CURADORIA #admin]</a>
+      <a href="#" id="footerKbd" style="color:var(--text-muted);text-decoration:none">[ATALHOS ⌨]</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ==========================================================================
+     FILA DE REPRODUÇÃO LATERAL (GLASS DRAWER)
+     ========================================================================== -->
+<aside id="queuePanel" class="queue-drawer" aria-label="Fila de reprodução">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid var(--border-subtle)">
+    <span style="font-family:var(--font-mono);font-size:12px;font-weight:700">FILA DE REPRODUÇÃO</span>
+    <button type="button" id="queueClose" style="color:var(--text-muted);font-size:15px">✕</button>
+  </div>
+  <div id="queueList" class="queue-list"></div>
+  <div style="padding:14px 18px;border-top:1px solid var(--border-subtle)">
+    <button type="button" id="queueClear" class="nav-pill-btn" style="width:100%;justify-content:center">LIMPAR FILA</button>
+  </div>
+</aside>
+
+<!-- ==========================================================================
+     FLOATING GLASS DOCK PLAYER (FIXO INFERIOR)
+     ========================================================================== -->
+<aside class="floating-dock-wrap" aria-label="Player Global">
+  <div class="floating-dock">
+    <div class="dock-timeline">
+      <span id="pCurrent" class="dock-time current">00:00:00</span>
+      <div id="pRail" class="dock-rail" role="slider" aria-label="Linha do tempo do set" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="dock-track">
+          <div id="pLoopBar" class="loop-rail-highlight"></div>
+          <div id="pFill" class="dock-fill"></div>
+        </div>
+      </div>
+      <span id="pTotal" class="dock-time" style="text-align:right">01:26:20</span>
+    </div>
+
+    <div class="dock-controls-row">
+      <div id="pInfo" class="dock-track-meta" title="Abrir inspeção de Waveform e Equalizador">
+        <img id="pThumb" class="dock-Artwork" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80" alt="Capa do set">
+        <div class="dock-meta-text">
+          <div id="pTitle" class="dock-title">SELECIONE UM SET</div>
+          <div id="pSub" class="dock-sub">Apotheootic • 150 BPM • F Minor</div>
+        </div>
+      </div>
+
+      <div class="dock-transport">
+        <button type="button" id="pRew" class="dock-icon-btn hide-sm" title="Retroceder 30s">-30s</button>
+        <button type="button" id="pPlay" class="dock-play-circle" aria-label="Play ou Pause"><span id="pPlayIcon">▶</span></button>
+        <button type="button" id="pFwd" class="dock-icon-btn hide-sm" title="Avançar 1 minuto">+1m</button>
+        <button type="button" id="pRate" class="dock-icon-btn hide-sm" title="Velocidade (Pitch)">1.0x</button>
+      </div>
+
+      <div class="dock-right">
+        <canvas id="pSpectrum" class="dock-spectrum" width="96" height="34" aria-label="Mini analisador de espectro"></canvas>
+        <div class="dock-vol-box">
+          <button type="button" id="pMuteBtn" style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted);min-width:30px">VOL</button>
+          <input type="range" id="pVolume" class="luxury-slider" min="0" max="1" step="0.02" value="0.88" aria-label="Volume">
+        </div>
+        <button type="button" id="pSleep" class="dock-icon-btn hide-sm" title="Sleep Timer">💤</button>
+        <button type="button" id="pCues" class="dock-icon-btn" style="color:var(--neon);border-color:rgba(57,255,20,0.3)">STUDIO EQ &amp; CUES ↗</button>
+      </div>
+    </div>
+  </div>
+  <audio id="audioEl" preload="metadata" playsinline></audio>
+</aside>
+
+<!-- ==========================================================================
+     MODAL STUDIO DE INSPEÇÃO (WAVEFORM GIGANTE + CUES + DJ EQ 3-BAND)
+     ========================================================================== -->
+<div id="detailModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="dTitle">
+  <div class="modal-glass-sheet">
+    <div class="modal-header">
+      <span class="luxury-badge"><span class="status-dot"></span>STUDIO MASTER DECK • WAVEFORM, CUES &amp; 3-BAND ISOLATOR</span>
+      <button type="button" id="dClose" class="nav-pill-btn">FECHAR ESC ✕</button>
+    </div>
+
+    <div class="detail-hero">
+      <div class="detail-art"><img id="dImg" src="" alt="Capa do set"></div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div id="dPills" class="deck-meta-pills"></div>
+        <h2 id="dTitle" style="font-family:var(--font-display);font-size:clamp(22px,3.2vw,34px);font-weight:800;line-height:1.15"></h2>
+        <p id="dArtist" style="font-family:var(--font-mono);font-size:12px;color:var(--neon)"></p>
+        <p id="dDesc" style="font-size:14px;color:var(--text-muted);line-height:1.65"></p>
+      </div>
+    </div>
+
+    <div class="studio-wf-stage">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-family:var(--font-mono);font-size:11px">
+        <span style="color:var(--text-muted)">WAVEFORM INTERATIVA DE ALTA RESOLUÇÃO (CLIQUE OU ARRASTE)</span>
+        <span id="dTime" style="color:var(--neon);font-weight:700">00:00:00 / 01:26:20</span>
+      </div>
+      <div id="dWfWrap" class="studio-wf-wrap">
+        <canvas id="dWfCanvas" class="studio-wf-canvas"></canvas>
+        <div id="dTooltip" class="wf-hover-pill">00:00:00</div>
+      </div>
+      <div id="dCues" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:16px"></div>
+    </div>
+
+    <div class="studio-console">
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px">
+        <button type="button" id="dPlay" class="dock-play-circle" style="width:54px;height:54px"><span id="dPlayIcon">▶</span></button>
+        <button type="button" id="dRew" class="nav-pill-btn">-30s</button>
+        <button type="button" id="dFwd" class="nav-pill-btn">+1m</button>
+        <button type="button" data-rate="0.75" class="nav-pill-btn speed">0.75x</button>
+        <button type="button" data-rate="1" class="nav-pill-btn speed active">1.0x</button>
+        <button type="button" data-rate="1.25" class="nav-pill-btn speed">1.25x</button>
+        <button type="button" data-rate="1.5" class="nav-pill-btn speed">1.5x</button>
+        <button type="button" id="dLoopBtn" class="nav-pill-btn">A-B LOOP</button>
+        <button type="button" id="eqResetBtn" class="nav-pill-btn">EQ FLAT</button>
+      </div>
+
+      <div class="eq-3band">
+        <div class="eq-col">
+          <div style="display:flex;justify-content:space-between"><span>LOW</span><span id="eqLowL" style="color:var(--neon)">0dB</span></div>
+          <input type="range" id="eqLow" class="luxury-slider" min="-15" max="12" step="1" value="0" aria-label="Graves">
+          <button type="button" class="eq-kill" data-kill="low">KILL LOW</button>
+        </div>
+        <div class="eq-col">
+          <div style="display:flex;justify-content:space-between"><span>MID</span><span id="eqMidL" style="color:var(--neon)">0dB</span></div>
+          <input type="range" id="eqMid" class="luxury-slider" min="-15" max="12" step="1" value="0" aria-label="Médios">
+          <button type="button" class="eq-kill" data-kill="mid">KILL MID</button>
+        </div>
+        <div class="eq-col">
+          <div style="display:flex;justify-content:space-between"><span>HIGH</span><span id="eqHighL" style="color:var(--neon)">0dB</span></div>
+          <input type="range" id="eqHigh" class="luxury-slider" min="-15" max="12" step="1" value="0" aria-label="Agudos">
+          <button type="button" class="eq-kill" data-kill="high">KILL HIGH</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==========================================================================
+     MODAIS DE SISTEMA (AUTH, SLEEP TIMER, DELETE, GAS, KEYBOARD)
+     ========================================================================== -->
+<div id="authModal" class="dialog-overlay" role="dialog" aria-modal="true">
+  <div class="dialog-card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+      <span class="luxury-badge">ACESSO PROPRIETÁRIO</span>
+      <button type="button" id="authClose" style="color:var(--text-muted)">✕</button>
+    </div>
+    <p style="font-size:13px;color:var(--text-muted);margin-bottom:18px">
+      Exclusivo para a conta administradora (<strong>purgatoriounder@gmail.com</strong>).
+    </p>
+    <form id="loginForm" style="display:flex;flex-direction:column;gap:14px">
+      <div class="field-group">
+        <label class="field-label" for="loginEmail">E-MAIL ADMINISTRADOR</label>
+        <input type="email" id="loginEmail" class="glass-input" required value="purgatoriounder@gmail.com">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="loginPass">CHAVE MESTRA</label>
+        <input type="password" id="loginPass" class="glass-input" required value="purgatorio2025">
+      </div>
+      <button type="submit" class="btn-primary-glow" style="justify-content:center;width:100%">DESBLOQUEAR CURADORIA</button>
+    </form>
+  </div>
+</div>
+
+<div id="sleepModal" class="dialog-overlay" role="dialog" aria-modal="true">
+  <div class="dialog-card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+      <span class="luxury-badge">💤 SLEEP TIMER</span>
+      <button type="button" id="sleepClose" style="color:var(--text-muted)">✕</button>
+    </div>
+    <p style="font-size:13px;color:var(--text-muted);margin-bottom:16px">Pausar transmissão automaticamente após:</p>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:14px">
+      <button type="button" class="btn-glass-pill sleep-opt" style="justify-content:center" data-min="15">15 MIN</button>
+      <button type="button" class="btn-glass-pill sleep-opt" style="justify-content:center" data-min="30">30 MIN</button>
+      <button type="button" class="btn-glass-pill sleep-opt" style="justify-content:center" data-min="45">45 MIN</button>
+      <button type="button" class="btn-glass-pill sleep-opt" style="justify-content:center" data-min="60">60 MIN</button>
+    </div>
+    <button type="button" id="sleepCancelBtn" class="nav-pill-btn" style="width:100%;justify-content:center;color:var(--danger)">DESATIVAR TIMER</button>
+  </div>
+</div>
+
+<div id="deleteModal" class="dialog-overlay" role="dialog" aria-modal="true">
+  <div class="dialog-card">
+    <h3 style="font-family:var(--font-display);font-size:18px;color:var(--danger);margin-bottom:10px">CONFIRMAR REMOÇÃO</h3>
+    <p id="deleteModalText" style="font-size:13px;color:var(--text-muted);margin-bottom:20px"></p>
+    <div style="display:flex;gap:10px">
+      <button type="button" id="confirmDeleteBtn" class="btn-primary-glow" style="flex:1;justify-content:center;background:var(--danger);color:#fff;box-shadow:none">EXCLUIR</button>
+      <button type="button" id="cancelDeleteBtn" class="btn-glass-pill" style="flex:1;justify-content:center">CANCELAR</button>
+    </div>
+  </div>
+</div>
+
+<div id="gasModal" class="dialog-overlay" role="dialog" aria-modal="true">
+  <div class="dialog-card" style="max-width:580px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <span class="luxury-badge">GOOGLE SHEETS / DRIVE API</span>
+      <button type="button" id="gasClose" style="color:var(--text-muted)">✕</button>
+    </div>
+    <p style="font-size:12px;color:var(--text-muted);margin-bottom:12px">Endpoint Web App (<code>exec</code>) do Google Apps Script:</p>
+    <div style="display:flex;gap:8px;margin-bottom:14px">
+      <input type="url" id="gasEndpoint" class="glass-input" placeholder="https://script.google.com/macros/s/.../exec">
+      <button type="button" id="gasSave" class="btn-primary-glow" style="height:44px;padding:0 18px">SALVAR</button>
+    </div>
+    <textarea readonly rows="6" class="glass-textarea" style="font-size:10px;color:var(--neon)">function doGet() {
+  const sh = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Sets');
+  const rows = sh ? sh.getDataRange().getValues() : [];
+  const headers = rows.shift() || [];
+  const data = rows.map(r => Object.fromEntries(headers.map((h,i)=>[h,r[i]])));
+  return ContentService.createTextOutput(JSON.stringify({status:'ok', sets:data}))
+    .setMimeType(ContentService.MimeType.JSON);
+}</textarea>
+  </div>
+</div>
+
+<div id="kbdModal" class="dialog-overlay" role="dialog" aria-modal="true">
+  <div class="dialog-card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+      <span class="luxury-badge">⌨ ATALHOS DE TECLADO</span>
+      <button type="button" id="kbdClose" style="color:var(--text-muted)">✕</button>
+    </div>
+    <div class="kbd-row"><span>Play / Pause</span><kbd>Espaço</kbd></div>
+    <div class="kbd-row"><span>Retroceder 30s / Avançar 1m</span><kbd>← / →</kbd></div>
+    <div class="kbd-row"><span>Volume + / −</span><kbd>↑ / ↓</kbd></div>
+    <div class="kbd-row"><span>Silenciar (Mute)</span><kbd>M</kbd></div>
+    <div class="kbd-row"><span>Inspecionar Studio EQ &amp; Cues</span><kbd>C</kbd></div>
+    <div class="kbd-row"><span>Fila de Reprodução</span><kbd>Q</kbd></div>
+    <div class="kbd-row"><span>Busca Rápida</span><kbd>/</kbd></div>
+    <div class="kbd-row"><span>Fechar Janelas</span><kbd>Esc</kbd></div>
+  </div>
+</div>
+
+<script>
+(() => {
+  'use strict';
+
+  /* ══════════════════════════════════════════════════════════
+     1. CONFIGURAÇÃO E CATÁLOGO PADRÃO
+     ══════════════════════════════════════════════════════════ */
+  const ADMIN_EMAIL = 'purgatoriounder@gmail.com';
+  const ADMIN_PASS = 'purgatorio2025';
+  const KEYS = {
+    CAT: 'pu_luxury_cat_v7',
+    STATE: 'pu_luxury_state_v7',
+    GAS: 'pu_luxury_gas_v7',
+    AUTH: 'pu_luxury_auth_v7',
+    FAVS: 'pu_luxury_favs_v7',
+    RECENT: 'pu_luxury_recent_v7',
+    LOGO: 'pu_luxury_logo_v7'
+  };
+
+  const DEFAULT_SETS = [
+    {
+      id: 'pu-001',
+      title: 'APOTHEOOTIC — RITUAL DE FERRO & SUBMUNDO #01 [EXTENDED WAREHOUSE]',
+      artist: 'Apotheootic • Purgatório Under',
+      bpm: 150,
+      musicalKey: 'F Minor',
+      durationSeconds: 5180,
+      durationFormatted: '01:26:20',
+      format: 'WAV 24-BIT',
+      driveUrl: '',
+      coverUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80',
+      tags: ['Hard Techno', 'Industrial', 'F Minor', '+60 Min'],
+      description: 'Sessão contínua de 86 minutos gravada ao vivo em F Minor a 150 BPM. Kicks industriais percussivos, sub-bass cavernoso e leads hipnóticos de sintetizador trance.',
+      cues: [
+        { timeSec: 0, label: '00:00 Intro Abissal' },
+        { timeSec: 1140, label: '19:00 Rumble F-Minor' },
+        { timeSec: 2790, label: '46:30 Trance Synth Peak' },
+        { timeSec: 4140, label: '01:09:00 Industrial Finale' }
+      ],
+      peaks: [0.42, 0.75, 0.91, 0.62, 0.95, 0.84, 0.58, 0.98, 0.87, 0.72, 0.94, 0.89, 0.66, 0.97, 0.91, 0.53, 0.85, 0.96, 0.79, 0.64, 0.88, 0.93, 0.71, 0.95]
+    },
+    {
+      id: 'pu-002',
+      title: 'PURGATÓRIO UNDER #02 — OBSIDIAN SCHRANZ & HIGH VOLTAGE [LIVE]',
+      artist: 'Coletivo Purgatório Under',
+      bpm: 156,
+      musicalKey: 'G Minor',
+      durationSeconds: 5790,
+      durationFormatted: '01:36:30',
+      format: 'WAV 24-BIT',
+      driveUrl: '',
+      coverUrl: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=900&q=80',
+      tags: ['Schranz', 'Hard Techno', 'Raw Hypnotic', '+60 Min'],
+      description: '96 minutos de pressão sonora contínua em 3 decks. Loops hipnóticos de Schranz, texturas metálicas de Berlim e cortes cirúrgicos de isolador.',
+      cues: [
+        { timeSec: 0, label: '00:00 Valve Ignition' },
+        { timeSec: 1500, label: '25:00 Schranz Overdrive' },
+        { timeSec: 3300, label: '55:00 Acid Siren Drop' },
+        { timeSec: 4800, label: '01:20:00 Closing Hammer' }
+      ],
+      peaks: [0.36, 0.69, 0.88, 0.94, 0.77, 0.92, 0.95, 0.49, 0.83, 0.97, 0.90, 0.75, 0.96, 0.82, 0.70, 0.99, 0.81, 0.86, 0.92, 0.59, 0.84, 0.91, 0.78, 0.62]
+    },
+    {
+      id: 'pu-003',
+      title: 'PROTOCOLO ESMERALDA #03 — ACID 303 & DARK EBM VAULT',
+      artist: 'KRYPTA_09 • Purgatório Under',
+      bpm: 148,
+      musicalKey: 'D Minor',
+      durationSeconds: 4650,
+      durationFormatted: '01:17:30',
+      format: 'MP3 320KBPS',
+      driveUrl: '',
+      coverUrl: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=900&q=80',
+      tags: ['Industrial', 'Acid', 'Raw Hypnotic', '+60 Min'],
+      description: 'Sequências ácidas de TB-303 com ressonância extrema modulando sobre baixos mecânicos de Dark EBM durante 1 hora e 17 minutos.',
+      cues: [
+        { timeSec: 0, label: '00:00 Modular Pulse' },
+        { timeSec: 1320, label: '22:00 303 Resonance' },
+        { timeSec: 2880, label: '48:00 Dark Vocoder' },
+        { timeSec: 3900, label: '01:05:00 Final Climax' }
+      ],
+      peaks: [0.55, 0.90, 0.84, 0.93, 0.70, 0.97, 0.83, 0.89, 0.76, 0.95, 0.96, 0.80, 0.61, 0.92, 0.87, 0.98, 0.85, 0.78, 0.90, 0.67, 0.89, 0.94, 0.73, 0.68]
+    }
+  ];
+
+  /* ══════════════════════════════════════════════════════════
+     2. ESTADO GLOBAL
+     ══════════════════════════════════════════════════════════ */
+  let catalog = [];
+  let activeSetId = DEFAULT_SETS[0].id;
+  let modalSetId = DEFAULT_SETS[0].id;
+  let isPlaying = false;
+  let currentTimeSec = 0;
+  let playbackRate = 1.0;
+  let masterVolume = 0.88;
+  let isMuted = false;
+  let isAdmin = false;
+  let searchQuery = '';
+  let activeChip = 'TODOS OS SETS';
+  let activeTab = 'catalog';
+  let layoutMode = 'decks'; // 'decks' | 'grid'
+  let vizMode = 'bars'; // 'bars' | 'scope' | 'radial'
+  let favorites = [];
+  let recent = [];
+  let queue = [];
+  let loopState = 0;
+  let loopA = null, loopB = null;
+  let sleepTimerId = null;
+  let pendingDeleteId = null;
+  let stagedCover = '';
+  let stagedLocalBlobUrl = null;
+  let stagedDecodedPeaks = null;
+  let playbackMode = 'synth';
+  let synthInterval = null, clockInterval = null, synthStep = 0;
+  let audioCtx = null, analyser = null, masterGain = null, eqLowF = null, eqMidF = null, eqHighF = null;
+  const eqKilled = { low: false, mid: false, high: false };
+
+  const $ = id => document.getElementById(id);
+  const audioEl = $('audioEl');
+  const gridEl = $('grid');
+  const chipsEl = $('chips');
+  const searchEl = $('search');
+
+  function toast(msg, type = 'success') {
+    const c = $('toasts');
+    if (!c) return;
+    const t = document.createElement('div');
+    t.className = `toast ${type === 'error' ? 'error' : ''}`;
+    t.innerHTML = `<span>${sanitize(msg)}</span><button type="button" style="color:var(--text-muted)">✕</button>`;
+    t.querySelector('button').onclick = () => t.remove();
+    c.appendChild(t);
+    setTimeout(() => { if (t.parentNode) t.remove(); }, 4200);
+  }
+
+  function sanitize(s) {
+    return String(s || '').replace(/[<>]/g, '').replace(/^[#>*`-]+\s*/gm, '').trim();
+  }
+
+  function fmtHMS(sec) {
+    sec = Math.max(0, Math.floor(Number(sec) || 0));
+    const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60;
+    return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  }
+
+  function parseHMS(str) {
+    if (!str) return 4800;
+    const p = String(str).trim().split(':').map(Number);
+    if (p.length === 3) return p[0] * 3600 + p[1] * 60 + (p[2] || 0);
+    if (p.length === 2) return p[0] * 60 + (p[1] || 0);
+    return 4800;
+  }
+
+  function getActive() { return catalog.find(s => s.id === activeSetId) || catalog[0]; }
+  function getModal() { return catalog.find(s => s.id === modalSetId) || getActive(); }
+  function isFav(id) { return favorites.includes(id); }
+  function pushRecent(id) {
+    recent = [id, ...recent.filter(x => x !== id)].slice(0, 20);
+    try { localStorage.setItem(KEYS.RECENT, JSON.stringify(recent)); } catch (e) {}
+  }
+
+  /* ══════════════════════════════════════════════════════════
+     3. PERSISTÊNCIA DE DADOS E SESSÃO
+     ══════════════════════════════════════════════════════════ */
+  function saveState() {
+    try {
+      const payload = JSON.stringify({
+        activeSetId,
+        currentTimeSec: Math.floor(currentTimeSec),
+        playbackRate,
+        masterVolume
+      });
+      sessionStorage.setItem(KEYS.STATE, payload);
+      localStorage.setItem(KEYS.STATE, payload);
+    } catch (e) {}
+  }
+
+  function loadState() {
+    try {
+      const cat = localStorage.getItem(KEYS.CAT);
+      if (cat) {
+        const p = JSON.parse(cat);
+        if (Array.isArray(p) && p.length) catalog = p;
+      }
+    } catch (e) {}
+    if (!catalog.length) catalog = JSON.parse(JSON.stringify(DEFAULT_SETS));
+
+    try {
+      const st = JSON.parse(sessionStorage.getItem(KEYS.STATE) || localStorage.getItem(KEYS.STATE) || 'null');
+      if (st && st.activeSetId && catalog.some(s => s.id === st.activeSetId)) {
+        activeSetId = st.activeSetId;
+        modalSetId = st.activeSetId;
+      }
+      if (st && typeof st.currentTimeSec === 'number') currentTimeSec = st.currentTimeSec;
+      if (st && typeof st.playbackRate === 'number') playbackRate = st.playbackRate;
+      if (st && typeof st.masterVolume === 'number') masterVolume = st.masterVolume;
+    } catch (e) {}
+
+    try {
+      isAdmin = sessionStorage.getItem(KEYS.AUTH) === 'true';
+      const f = localStorage.getItem(KEYS.FAVS);
+      if (f) favorites = JSON.parse(f);
+      const r = localStorage.getItem(KEYS.RECENT);
+      if (r) recent = JSON.parse(r);
+      const customLogo = localStorage.getItem(KEYS.LOGO);
+      if (customLogo) {
+        $('brandLogoContainer').innerHTML = `<img src="${customLogo}" alt="Logo Purgatório Under">`;
+      }
+    } catch (e) {}
+  }
+
+  function saveCatalog() {
+    try {
+      localStorage.setItem(KEYS.CAT, JSON.stringify(catalog.map(s => ({ ...s, localBlobUrl: null }))));
+    } catch (e) {}
+  }
+
+  /* ══════════════════════════════════════════════════════════
+     4. MOTOR DE ÁUDIO WEB AUDIO API + SINTETIZADOR 150 BPM F-MINOR
+     ══════════════════════════════════════════════════════════ */
+  function initAudio() {
+    if (!audioCtx) {
+      const C = window.AudioContext || window.webkitAudioContext;
+      audioCtx = new C();
+      eqLowF = audioCtx.createBiquadFilter(); eqLowF.type = 'lowshelf'; eqLowF.frequency.value = 180;
+      eqMidF = audioCtx.createBiquadFilter(); eqMidF.type = 'peaking'; eqMidF.frequency.value = 1100; eqMidF.Q.value = 1;
+      eqHighF = audioCtx.createBiquadFilter(); eqHighF.type = 'highshelf'; eqHighF.frequency.value = 4200;
+      masterGain = audioCtx.createGain(); masterGain.gain.value = isMuted ? 0 : masterVolume;
+      analyser = audioCtx.createAnalyser(); analyser.fftSize = 128; analyser.smoothingTimeConstant = 0.84;
+
+      eqLowF.connect(eqMidF);
+      eqMidF.connect(eqHighF);
+      eqHighF.connect(masterGain);
+      masterGain.connect(analyser);
+      analyser.connect(audioCtx.destination);
+    }
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+  }
+
+  async function decodeFileToPeaks(file, numBars = 56) {
+    initAudio();
+    try {
+      const buf = await file.arrayBuffer();
+      const audioBuffer = await audioCtx.decodeAudioData(buf);
+      const chan = audioBuffer.getChannelData(0);
+      const block = Math.floor(chan.length / numBars);
+      const peaks = [];
+      for (let i = 0; i < numBars; i++) {
+        let max = 0;
+        const start = i * block;
+        for (let j = 0; j < block; j++) {
+          const v = Math.abs(chan[start + j] || 0);
+          if (v > max) max = v;
+        }
+        peaks.push(Number(Math.max(0.18, Math.min(0.98, max)).toFixed(2)));
+      }
+      return { peaks, durationSec: Math.floor(audioBuffer.duration) };
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function triggerSynthStep(bpm) {
+    if (!audioCtx) return;
+    const now = audioCtx.currentTime;
+    const step = synthStep % 16;
+
+    // Industrial Kick 150 BPM F1 (43.65 Hz)
+    if (step % 4 === 0) {
+      const o = audioCtx.createOscillator(), g = audioCtx.createGain();
+      o.type = 'triangle';
+      o.frequency.setValueAtTime(155, now);
+      o.frequency.exponentialRampToValueAtTime(43.65, now + 0.08);
+      o.frequency.exponentialRampToValueAtTime(28.5, now + 0.26);
+      g.gain.setValueAtTime(0.92, now);
+      g.gain.exponentialRampToValueAtTime(0.001, now + 0.27);
+      o.connect(g); g.connect(eqLowF); o.start(now); o.stop(now + 0.28);
+    }
+    // Sub-Bass Rumble F Minor
+    if (step % 4 === 2 || step % 4 === 3) {
+      const o = audioCtx.createOscillator(), f = audioCtx.createBiquadFilter(), g = audioCtx.createGain();
+      o.type = 'sawtooth'; o.frequency.setValueAtTime(step % 4 === 2 ? 43.65 : 51.91, now);
+      f.type = 'lowpass'; f.frequency.setValueAtTime(140, now);
+      g.gain.setValueAtTime(0.36, now); g.gain.exponentialRampToValueAtTime(0.001, now + 0.13);
+      o.connect(f); f.connect(g); g.connect(eqLowF); o.start(now); o.stop(now + 0.14);
+    }
+    // Lead Trance / Acid F Minor
+    const arp = [174.61, 207.65, 261.63, 277.18, 261.63, 207.65, 174.61, 311.13, 174.61, 207.65, 261.63, 349.23, 311.13, 277.18, 261.63, 207.65];
+    if (step % 2 === 0 || step === 7 || step === 15) {
+      const o = audioCtx.createOscillator(), f = audioCtx.createBiquadFilter(), g = audioCtx.createGain();
+      o.type = 'sawtooth'; o.frequency.setValueAtTime(arp[step], now);
+      f.type = 'lowpass';
+      const cut = 520 + Math.sin(synthStep * 0.18) * 380 + (step % 4 === 0 ? 680 : 0);
+      f.frequency.setValueAtTime(cut, now); f.Q.setValueAtTime(8.5, now);
+      g.gain.setValueAtTime(0.18, now); g.gain.exponentialRampToValueAtTime(0.001, now + 0.13);
+      o.connect(f); f.connect(g); g.connect(eqLowF); o.start(now); o.stop(now + 0.14);
+    }
+    // Off-beat Hat Metálico
+    if (step % 2 === 1) {
+      const bl = Math.floor(audioCtx.sampleRate * 0.05);
+      const buf = audioCtx.createBuffer(1, bl, audioCtx.sampleRate);
+      const out = buf.getChannelData(0);
+      for (let i = 0; i < bl; i++) out[i] = (Math.random() * 2 - 1) * Math.exp(-i / (bl * 0.35));
+      const src = audioCtx.createBufferSource(); src.buffer = buf;
+      const hp = audioCtx.createBiquadFilter(); hp.type = 'highpass'; hp.frequency.setValueAtTime(6500, now);
+      const g = audioCtx.createGain(); g.gain.setValueAtTime(step % 4 === 2 ? 0.2 : 0.09, now); g.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+      src.connect(hp); hp.connect(g); g.connect(eqLowF); src.start(now);
+    }
+    synthStep++;
+  }
+
+  function stopTimers() {
+    if (synthInterval) { clearInterval(synthInterval); synthInterval = null; }
+    if (clockInterval) { clearInterval(clockInterval); clockInterval = null; }
+  }
+
+  function startSynthEngine(set) {
+    playbackMode = 'synth';
+    try { audioEl.pause(); } catch (e) {}
+    $('statSource').textContent = `SYNTH ${set.bpm || 150}`;
+    const bpm = Number(set.bpm) || 150;
+    const stepMs = ((60 / bpm) / 4) * 1000 / playbackRate;
+    synthInterval = setInterval(() => triggerSynthStep(bpm), stepMs);
+    clockInterval = setInterval(() => {
+      currentTimeSec += 0.25 * playbackRate;
+      if (loopState === 2 && loopA !== null && loopB !== null && currentTimeSec >= loopB) {
+        currentTimeSec = loopA;
+      }
+      if (currentTimeSec >= set.durationSeconds) {
+        currentTimeSec = 0;
+        if (queue.length > 0) { nextInQueue(); return; }
+      }
+      updateProgressUI();
+      saveState();
+    }, 250);
+  }
+
+  function resolveStream(set) {
+    if (set.localBlobUrl) return set.localBlobUrl;
+    const raw = (set.driveUrl || '').trim();
+    if (!raw) return null;
+    const m = raw.match(/\/file\/d\/([a-zA-Z0-9_-]+)/) || raw.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+    if (m) return `https://drive.google.com/uc?export=download&id=${m[1]}`;
+    if (raw.startsWith('http')) return raw;
+    return null;
+  }
+
+  function playSet(id, seek = null) {
+    const set = catalog.find(s => s.id === id);
+    if (!set) return;
+    initAudio();
+    const same = activeSetId === id;
+    activeSetId = id;
+    if (!same && seek === null) {
+      currentTimeSec = 0;
+      resetABLoop();
+    }
+    if (seek !== null) currentTimeSec = Math.max(0, Math.min(set.durationSeconds - 1, seek));
+    stopTimers();
+    isPlaying = true;
+    pushRecent(id);
+
+    const url = resolveStream(set);
+    if (url) {
+      playbackMode = 'stream';
+      $('statSource').textContent = set.localBlobUrl ? 'LOCAL MASTER' : 'DRIVE STREAM';
+      try {
+        if (audioEl.src !== url) audioEl.src = url;
+        audioEl.playbackRate = playbackRate;
+        audioEl.volume = isMuted ? 0 : masterVolume;
+        audioEl.currentTime = currentTimeSec;
+        const p = audioEl.play();
+        if (p && p.catch) {
+          p.catch(() => {
+            toast('Stream Google Drive requer permissão pública. Sintetizador 150 BPM ativado.', 'error');
+            startSynthEngine(set);
+          });
+        }
+      } catch (e) {
+        startSynthEngine(set);
+      }
+    } else {
+      startSynthEngine(set);
+    }
+    updateAllUI();
+    renderGrid();
+    saveState();
+  }
+
+  function pausePlayback() {
+    isPlaying = false;
+    stopTimers();
+    try { audioEl.pause(); } catch (e) {}
+    updateAllUI();
+    renderGrid();
+    saveState();
+  }
+
+  function togglePlay() {
+    if (isPlaying) pausePlayback();
+    else playSet(activeSetId, currentTimeSec);
+  }
+
+  function seekTo(sec) {
+    const set = getActive();
+    if (!set) return;
+    currentTimeSec = Math.max(0, Math.min(set.durationSeconds - 1, sec));
+    if (playbackMode === 'stream' && !isNaN(audioEl.duration)) {
+      try { audioEl.currentTime = currentTimeSec; } catch (e) {}
+    }
+    updateProgressUI();
+    saveState();
+  }
+
+  function skip(delta) { seekTo(currentTimeSec + delta); }
+
+  function setRate(r) {
+    playbackRate = Number(r) || 1;
+    audioEl.playbackRate = playbackRate;
+    $('pRate').textContent = playbackRate + 'x';
+    document.querySelectorAll('.speed').forEach(b => {
+      b.classList.toggle('active', Number(b.dataset.rate) === playbackRate);
+    });
+    if (isPlaying && playbackMode === 'synth') playSet(activeSetId, currentTimeSec);
+    saveState();
+  }
+
+  function resetABLoop() {
+    loopState = 0; loopA = null; loopB = null;
+    const btn = $('dLoopBtn');
+    if (btn) { btn.classList.remove('active'); btn.textContent = 'A-B LOOP'; }
+    const bar = $('pLoopBar');
+    if (bar) bar.style.display = 'none';
+  }
+
+  function nextInQueue() {
+    if (!queue.length) return;
+    const next = queue.shift();
+    saveQueue();
+    playSet(next);
+  }
+
+  function saveQueue() {
+    $('queueBadge').textContent = queue.length;
+    $('queueBadge').classList.toggle('hidden', queue.length === 0);
+    renderQueue();
+  }
+
+  /* ══════════════════════════════════════════════════════════
+     5. RENDERIZAÇÃO DE WAVEFORM SOUNDCLOUD PRO (ESPELHADA + GRADIENTE)
+     ══════════════════════════════════════════════════════════ */
+  function drawWave(canvas, peaks, ratio, cues = [], total = 5180, showCues = false) {
+    if (!canvas) return;
+    const r = canvas.getBoundingClientRect();
+    if (!r.width || !r.height) return;
+    const dpr = window.devicePixelRatio || 1;
+    if (canvas.width !== Math.floor(r.width * dpr) || canvas.height !== Math.floor(r.height * dpr)) {
+      canvas.width = Math.floor(r.width * dpr);
+      canvas.height = Math.floor(r.height * dpr);
+    }
+    const ctx = canvas.getContext('2d');
+    ctx.save();
+    ctx.scale(dpr, dpr);
+    ctx.clearRect(0, 0, r.width, r.height);
+    const w = r.width, h = r.height;
+
+    // A-B Loop Highlight
+    if (showCues && loopState > 0 && loopA !== null && total > 0) {
+      const ax = (loopA / total) * w;
+      const bx = loopB !== null ? (loopB / total) * w : ratio * w;
+      ctx.fillStyle = 'rgba(57, 255, 20, 0.11)';
+      ctx.fillRect(Math.min(ax, bx), 0, Math.abs(bx - ax), h);
+    }
+
+    const bars = showCues ? Math.max(84, Math.floor(w / 5)) : Math.max(48, Math.floor(w / 5.5));
+    const gap = 2, bw = Math.max(2, (w / bars) - gap);
+    const cy = h * 0.68;
+    const p = (Array.isArray(peaks) && peaks.length) ? peaks : DEFAULT_SETS[0].peaks;
+
+    const gradPlayed = ctx.createLinearGradient(0, 0, 0, cy);
+    gradPlayed.addColorStop(0, '#39FF14');
+    gradPlayed.addColorStop(1, '#00E676');
+
+    for (let i = 0; i < bars; i++) {
+      const pv = p[i % p.length];
+      const mod = Math.sin(i * 0.42) * 0.1;
+      const amp = Math.max(0.16, Math.min(0.96, pv + mod));
+      const topH = amp * (cy - 5);
+      const botH = topH * 0.36;
+      const x = i * (bw + gap);
+      const played = (i / bars) <= ratio;
+
+      // Parte superior da onda
+      ctx.fillStyle = played ? gradPlayed : 'rgba(255, 255, 255, 0.16)';
+      ctx.beginPath();
+      ctx.roundRect ? ctx.roundRect(x, cy - topH, bw, topH, 2) : ctx.rect(x, cy - topH, bw, topH);
+      ctx.fill();
+
+      // Reflexo inferior espelhado
+      ctx.fillStyle = played ? 'rgba(57, 255, 20, 0.28)' : 'rgba(255, 255, 255, 0.05)';
+      ctx.fillRect(x, cy + 2, bw, botH);
+    }
+
+    // Marcadores de Cue Points
+    if (showCues && Array.isArray(cues) && total > 0) {
+      cues.forEach(c => {
+        const rr = Math.max(0.01, Math.min(0.99, c.timeSec / total));
+        const cx = rr * w;
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.45)';
+        ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(cx, 0); ctx.lineTo(cx, h); ctx.stroke();
+        ctx.fillStyle = '#39FF14';
+        ctx.beginPath(); ctx.arc(cx, 6, 3.5, 0, Math.PI * 2); ctx.fill();
+      });
+    }
+
+    // Playhead Luminoso
+    const px = ratio * w;
+    ctx.strokeStyle = '#FFFFFF';
+    ctx.lineWidth = 1.8;
+    ctx.beginPath(); ctx.moveTo(px, 0); ctx.lineTo(px, h); ctx.stroke();
+    ctx.restore();
+  }
+
+  /* ══════════════════════════════════════════════════════════
+     6. ANALISADOR ACÚSTICO EM TEMPO REAL (SPECTRUM / SCOPE / RADIAL)
+     ══════════════════════════════════════════════════════════ */
+  function startVisualizers() {
+    const heroC = $('oscCanvas'), dockC = $('pSpectrum');
+    const freq = new Uint8Array(64), time = new Uint8Array(64);
+
+    function frame() {
+      requestAnimationFrame(frame);
+      if (analyser && isPlaying && playbackMode === 'synth') {
+        analyser.getByteFrequencyData(freq);
+        analyser.getByteTimeDomainData(time);
+      } else if (isPlaying) {
+        const set = getActive();
+        const bpm = (Number(set?.bpm) || 150) * playbackRate;
+        const phase = (performance.now() / 1000) * (bpm / 60) * Math.PI * 2;
+        const kick = Math.pow(Math.max(0, Math.cos(phase)), 4);
+        for (let i = 0; i < 64; i++) {
+          freq[i] = i < 10 ? Math.min(255, Math.floor(190 * kick + 48)) : Math.min(255, Math.floor(85 + Math.sin(phase * 0.5 + i * 0.35) * 65));
+          time[i] = Math.floor(128 + Math.sin(phase + i * 0.3) * 52 * kick);
+        }
+      } else {
+        const t = performance.now() * 0.002;
+        for (let i = 0; i < 64; i++) {
+          freq[i] = Math.floor(16 + Math.sin(t + i * 0.25) * 8);
+          time[i] = Math.floor(128 + Math.sin(t + i * 0.2) * 4);
+        }
+      }
+
+      // Mini Spectrum no Floating Dock
+      if (dockC) {
+        const dc = dockC.getContext('2d'), dw = dockC.width, dh = dockC.height;
+        dc.clearRect(0, 0, dw, dh);
+        const nb = 16, gap = 2, bw = (dw / nb) - gap;
+        for (let i = 0; i < nb; i++) {
+          const v = freq[i * 2] / 255;
+          const bh = Math.max(3, v * (dh - 6));
+          dc.fillStyle = '#39FF14';
+          dc.fillRect(i * (bw + gap), dh - bh - 2, bw, bh);
+        }
+      }
+
+      // Analisador Principal no Hero
+      if (heroC) {
+        const r = heroC.getBoundingClientRect();
+        if (r.width > 0 && r.height > 0) {
+          const dpr = window.devicePixelRatio || 1;
+          if (heroC.width !== Math.floor(r.width * dpr)) {
+            heroC.width = Math.floor(r.width * dpr);
+            heroC.height = Math.floor(r.height * dpr);
+          }
+          const hc = heroC.getContext('2d');
+          hc.save();
+          hc.scale(dpr, dpr);
+          const hw = r.width, hh = r.height;
+          hc.clearRect(0, 0, hw, hh);
+
+          if (vizMode === 'bars') {
+            const nb = 32, gap = 4, bw = (hw - 24) / nb - gap;
+            const grad = hc.createLinearGradient(0, 0, 0, hh);
+            grad.addColorStop(0, '#39FF14');
+            grad.addColorStop(1, 'rgba(0, 230, 118, 0.18)');
+            for (let i = 0; i < nb; i++) {
+              const v = freq[i] / 255;
+              const bh = Math.max(6, v * (hh - 24));
+              hc.fillStyle = grad;
+              hc.fillRect(12 + i * (bw + gap), hh - bh - 10, bw, bh);
+            }
+          } else if (vizMode === 'scope') {
+            hc.strokeStyle = '#39FF14';
+            hc.lineWidth = 2.2;
+            hc.shadowColor = '#39FF14';
+            hc.shadowBlur = 12;
+            hc.beginPath();
+            const slice = hw / (time.length - 1);
+            for (let i = 0; i < time.length; i++) {
+              const y = (time[i] / 255) * hh;
+              const x = i * slice;
+              if (i === 0) hc.moveTo(x, y); else hc.lineTo(x, y);
+            }
+            hc.stroke();
+          } else if (vizMode === 'radial') {
+            const cx = hw / 2, cy = hh / 2;
+            const bass = (freq[0] + freq[1] + freq[2]) / (3 * 255);
+            const baseR = 22 + bass * 26;
+            hc.strokeStyle = '#39FF14';
+            hc.lineWidth = 2;
+            hc.beginPath(); hc.arc(cx, cy, baseR, 0, Math.PI * 2); hc.stroke();
+            const rays = 32;
+            for (let i = 0; i < rays; i++) {
+              const a = (i / rays) * Math.PI * 2;
+              const val = (freq[i] / 255) * 28;
+              hc.beginPath();
+              hc.moveTo(cx + Math.cos(a) * baseR, cy + Math.sin(a) * baseR);
+              hc.lineTo(cx + Math.cos(a) * (baseR + val), cy + Math.sin(a) * (baseR + val));
+              hc.stroke();
+            }
+          }
+          hc.restore();
+        }
+      }
+    }
+    requestAnimationFrame(frame);
+  }
+
+  /* ══════════════════════════════════════════════════════════
+     7. RENDERIZAÇÃO DO CATÁLOGO (DECKS PANORÂMICOS & GRID)
+     ══════════════════════════════════════════════════════════ */
+  const CATEGORIES = ['TODOS OS SETS', '150+ BPM', 'F MINOR', 'HARD TECHNO', 'INDUSTRIAL', 'SCHRANZ', 'RAW HYPNOTIC', '+60 MIN'];
+
+  function renderChips() {
+    chipsEl.innerHTML = CATEGORIES.map(c => `
+      <button type="button" class="filter-chip ${activeChip === c ? 'active' : ''}" data-chip="${c}">${c}</button>
+    `).join('');
+  }
+
+  function getFiltered() {
+    let arr = catalog;
+    if (activeTab === 'favorites') arr = arr.filter(s => isFav(s.id));
+    if (activeTab === 'recent') arr = arr.filter(s => recent.includes(s.id)).sort((a, b) => recent.indexOf(a.id) - recent.indexOf(b.id));
+    return arr.filter(s => {
+      if (activeChip !== 'TODOS OS SETS') {
+        if (activeChip === '150+ BPM' && Number(s.bpm) < 150) return false;
+        else if (activeChip === 'F MINOR' && (s.musicalKey || '').toUpperCase() !== 'F MINOR') return false;
+        else if (activeChip !== '150+ BPM' && activeChip !== 'F MINOR') {
+          if (!(s.tags || []).some(t => t.toUpperCase() === activeChip)) return false;
+        }
+      }
+      if (searchQuery) {
+        const q = searchQuery.toLowerCase();
+        return s.title.toLowerCase().includes(q) ||
+               s.artist.toLowerCase().includes(q) ||
+               String(s.bpm).includes(q) ||
+               (s.musicalKey || '').toLowerCase().includes(q) ||
+               (s.tags || []).some(t => t.toLowerCase().includes(q));
+      }
+      return true;
+    });
+  }
+
+  function renderGrid() {
+    const filtered = getFiltered();
+    gridEl.className = layoutMode === 'grid' ? 'catalog-grid-mode' : 'catalog-list';
+    $('counter').textContent = `${filtered.length} ${filtered.length === 1 ? 'SET DISPONÍVEL' : 'SETS DISPONÍVEIS'}`;
+    $('statCount').textContent = `${String(catalog.length).padStart(2, '0')} SETS`;
+    $('tabCatalogCount').textContent = catalog.length;
+    $('tabFavCount').textContent = favorites.length;
+    $('tabRecentCount').textContent = recent.length;
+
+    if (!filtered.length) {
+      gridEl.innerHTML = `
+        <div style="background:var(--glass-surface);border:1px solid var(--border-subtle);border-radius:24px;padding:48px 20px;text-align:center;grid-column:1/-1">
+          <p style="font-family:var(--font-mono);font-size:13px;color:var(--text-muted);margin-bottom:16px">NENHUM SET ENCONTRADO PARA ESTE FILTRO.</p>
+          <button type="button" class="btn-glass-pill" id="resetBtn">LIMPAR BUSCA E FILTROS</button>
+        </div>
+      `;
+      const rb = $('resetBtn');
+      if (rb) rb.onclick = () => {
+        activeChip = 'TODOS OS SETS'; searchQuery = ''; searchEl.value = '';
+        $('searchClear').classList.remove('active'); activeTab = 'catalog';
+        renderChips(); renderGrid();
+      };
+      return;
+    }
+
+    gridEl.innerHTML = filtered.map(s => {
+      const active = s.id === activeSetId;
+      const playing = active && isPlaying;
+      const fav = isFav(s.id);
+      return `
+        <article class="deck-card ${playing ? 'playing' : ''}" data-id="${s.id}">
+          <div class="deck-artwork" data-act="play" data-id="${s.id}">
+            <img src="${s.coverUrl}" alt="${sanitize(s.title)}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80'">
+            <div class="artwork-overlay">
+              <span class="play-orb ${playing ? 'playing' : ''}">${playing ? '❚❚' : '▶'}</span>
+            </div>
+            <span class="artwork-badge-fmt">${sanitize(s.format || 'WAV 24-BIT')}</span>
+            <span class="artwork-badge-dur">${sanitize(s.durationFormatted)}</span>
+          </div>
+
+          <div class="deck-content">
+            <div class="deck-header-row">
+              <div style="min-width:0">
+                <div class="deck-meta-pills">
+                  <span class="meta-pill neon">${s.bpm} BPM</span>
+                  <span class="meta-pill">${sanitize(s.musicalKey)}</span>
+                  <span class="meta-pill">${(s.cues || []).length} CUE POINTS</span>
+                </div>
+                <h3 class="deck-title" data-act="modal" data-id="${s.id}">${sanitize(s.title)}</h3>
+                <div class="deck-artist">${sanitize(s.artist)}</div>
+              </div>
+            </div>
+
+            <div class="deck-wf-box" data-act="wf-seek" data-id="${s.id}" title="Clique na onda sonora para saltar para este ponto">
+              <canvas id="wf-${s.id}"></canvas>
+            </div>
+
+            <div class="deck-cues-bar">
+              ${(s.cues || []).map(c => `
+                <button type="button" class="mini-cue-pill" data-act="cue" data-id="${s.id}" data-sec="${c.timeSec}">
+                  <span style="color:var(--neon)">●</span><span>${sanitize(c.label)}</span>
+                </button>
+              `).join('')}
+            </div>
+
+            <div class="deck-footer-row">
+              <div class="deck-tags">
+                ${(s.tags || []).map(t => `<span class="tag-link" data-tag="${sanitize(t)}">#${sanitize(t)}</span>`).join('')}
+              </div>
+              <div class="deck-actions">
+                <button type="button" class="action-pill fav ${fav ? 'active' : ''}" data-act="fav" data-id="${s.id}">${fav ? '★ SALVO' : '☆ FAVORITAR'}</button>
+                <button type="button" class="action-pill" data-act="queue" data-id="${s.id}">＋ FILA</button>
+                ${isAdmin ? `
+                  <button type="button" class="action-pill" data-act="edit" data-id="${s.id}">✎ EDITAR</button>
+                  <button type="button" class="action-pill danger" data-act="del" data-id="${s.id}">✕</button>
+                ` : ''}
+                <button type="button" class="action-pill" data-act="modal" data-id="${s.id}">STUDIO ↗</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      `;
+    }).join('');
+
+    requestAnimationFrame(() => {
+      filtered.forEach(s => {
+        const c = document.getElementById(`wf-${s.id}`);
+        const r = s.id === activeSetId && s.durationSeconds ? currentTimeSec / s.durationSeconds : 0;
+        drawWave(c, s.peaks, r, s.cues, s.durationSeconds, true);
+      });
+    });
+  }
+
+  /* ══════════════════════════════════════════════════════════
+     8. ATUALIZAÇÃO DE UI GLOBAL & HERO WAVEFORM
+     ══════════════════════════════════════════════════════════ */
+  function updateAllUI() {
+    const s = getActive();
+    if (!s) return;
+    $('pThumb').src = s.coverUrl;
+    $('pThumb').classList.toggle('spinning', isPlaying);
+    $('heroMiniThumb').src = s.coverUrl;
+    $('heroBackdropArt').style.backgroundImage = `url('${s.coverUrl}')`;
+    $('pTitle').textContent = sanitize(s.title);
+    $('pSub').textContent = `${sanitize(s.artist)} • ${s.bpm} BPM • ${sanitize(s.musicalKey)}`;
+    $('pTotal').textContent = s.durationFormatted;
+    $('pPlayIcon').textContent = isPlaying ? '❚❚' : '▶';
+    $('heroIcon').textContent = isPlaying ? '❚❚' : '▶';
+    $('heroText').textContent = isPlaying ? 'PAUSAR TRANSMISSÃO' : 'INICIAR TRANSMISSÃO';
+    $('heroActiveTitle').textContent = sanitize(s.title);
+    $('telemetryName').textContent = `${isPlaying ? '● ON AIR' : 'STANDBY'} • ${s.bpm} BPM`;
+    $('statBpm').textContent = `${s.bpm} • ${sanitize(s.musicalKey)}`;
+    updateProgressUI();
+  }
+
+  function updateProgressUI() {
+    const s = getActive();
+    if (!s) return;
+    const ratio = s.durationSeconds ? Math.min(1, currentTimeSec / s.durationSeconds) : 0;
+    $('pCurrent').textContent = fmtHMS(currentTimeSec);
+    $('pFill').style.width = `${ratio * 100}%`;
+    $('heroActiveTime').textContent = `${fmtHMS(currentTimeSec)} / ${s.durationFormatted}`;
+
+    // Loop bar no Dock
+    const loopBar = $('pLoopBar');
+    if (loopState > 0 && loopA !== null && s.durationSeconds > 0) {
+      const aPct = (loopA / s.durationSeconds) * 100;
+      const bPct = loopB !== null ? (loopB / s.durationSeconds) * 100 : ratio * 100;
+      loopBar.style.display = 'block';
+      loopBar.style.left = `${Math.min(aPct, bPct)}%`;
+      loopBar.style.width = `${Math.abs(bPct - aPct)}%`;
+    } else {
+      loopBar.style.display = 'none';
+    }
+
+    // Hero Waveform e Card Waveform
+    drawWave($('heroWfCanvas'), s.peaks, ratio, s.cues, s.durationSeconds, true);
+    const mc = document.getElementById(`wf-${s.id}`);
+    if (mc) drawWave(mc, s.peaks, ratio, s.cues, s.durationSeconds, true);
+    refreshModalWave();
+  }
+
+  function openModal(id) {
+    const s = catalog.find(x => x.id === id) || getActive();
+    if (!s) return;
+    modalSetId = s.id;
+    $('dImg').src = s.coverUrl;
+    $('dTitle').textContent = sanitize(s.title);
+    $('dArtist').textContent = sanitize(s.artist);
+    $('dDesc').textContent = sanitize(s.description);
+    $('dPills').innerHTML = `
+      <span class="meta-pill neon">${s.bpm} BPM</span>
+      <span class="meta-pill">${sanitize(s.musicalKey)}</span>
+      <span class="meta-pill">${sanitize(s.durationFormatted)}</span>
+      <span class="meta-pill">${sanitize(s.format || 'WAV 24-BIT')}</span>
+    `;
+    $('dCues').innerHTML = (s.cues || []).map(c => `
+      <button type="button" class="mini-cue-pill" style="padding:7px 14px;font-size:11px" data-cue="${c.timeSec}">
+        <span style="color:var(--neon)">▼</span><span>${sanitize(c.label)}</span>
+      </button>
+    `).join('');
+    $('dCues').querySelectorAll('[data-cue]').forEach(b => {
+      b.onclick = () => {
+        playSet(s.id, Number(b.dataset.cue) || 0);
+        refreshModalWave();
+      };
+    });
+    $('detailModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    refreshModalWave();
+  }
+
+  function closeModal() {
+    $('detailModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function refreshModalWave() {
+    if (!$('detailModal').classList.contains('open')) return;
+    const s = getModal();
+    if (!s) return;
+    const isA = s.id === activeSetId;
+    const elapsed = isA ? currentTimeSec : 0;
+    const ratio = s.durationSeconds ? Math.min(1, elapsed / s.durationSeconds) : 0;
+    $('dTime').textContent = `${fmtHMS(elapsed)} / ${s.durationFormatted}`;
+    $('dPlayIcon').textContent = (isA && isPlaying) ? '❚❚' : '▶';
+    drawWave($('dWfCanvas'), s.peaks, ratio, s.cues, s.durationSeconds, true);
+  }
+
+  function renderQueue() {
+    const list = $('queueList');
+    if (!queue.length) {
+      list.innerHTML = '<div style="padding:40px 20px;text-align:center;font-family:var(--font-mono);font-size:11px;color:var(--text-dim)">FILA DE REPRODUÇÃO VAZIA</div>';
+      return;
+    }
+    list.innerHTML = queue.map(id => {
+      const s = catalog.find(x => x.id === id);
+      if (!s) return '';
+      return `
+        <div class="q-row ${id === activeSetId ? 'active' : ''}" data-qid="${id}">
+          <img src="${s.coverUrl}" alt="">
+          <div style="flex:1;min-width:0">
+            <div style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${sanitize(s.title)}</div>
+            <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">${s.bpm} BPM • ${sanitize(s.musicalKey)}</div>
+          </div>
+          <button type="button" data-qrem="${id}" style="color:var(--text-muted);padding:4px 8px">✕</button>
+        </div>
+      `;
+    }).join('');
+  }
+
+  /* ══════════════════════════════════════════════════════════
+     9. ADMIN CRUD & UPLOAD DE LOGO / CAPAS / ÁUDIO
+     ══════════════════════════════════════════════════════════ */
+  function openAdminFlow() {
+    if (isAdmin) {
+      $('adminSection').classList.add('active');
+      $('adminSection').scrollIntoView({ behavior: 'smooth' });
+      $('adminBtn').classList.add('active');
+    } else {
+      $('authModal').classList.add('open');
+    }
+  }
+
+  function populateFormForEdit(setId) {
+    const s = catalog.find(x => x.id === setId);
+    if (!s) return;
+    openAdminFlow();
+    $('editId').value = s.id;
+    $('adminFormHeading').textContent = `EDITANDO SET: ${s.title.slice(0, 28)}...`;
+    $('pubText').textContent = 'SALVAR ALTERAÇÕES';
+    $('cancelEditBtn').classList.remove('hidden');
+    $('fTitle').value = s.title;
+    $('fArtist').value = s.artist;
+    $('fDrive').value = s.driveUrl || '';
+    $('fBpm').value = s.bpm;
+    $('fKey').value = s.musicalKey;
+    $('fDuration').value = s.durationFormatted;
+    $('fFormat').value = s.format || 'WAV 24-BIT';
+    $('fTags').value = (s.tags || []).join(', ');
+    $('fDesc').value = s.description || '';
+    $('fCues').value = (s.cues || []).map(c => c.label).join('\n');
+    stagedCover = s.coverUrl || '';
+    if (stagedCover) {
+      $('dzImg').src = stagedCover;
+      $('dzPreview').classList.add('has');
+      $('dzPrompt').style.display = 'none';
+    }
+  }
+
+  function resetAdminForm() {
+    $('publishForm').reset();
+    $('editId').value = '';
+    $('adminFormHeading').textContent = 'CURADORIA MASTER & CONEXÃO GOOGLE DRIVE';
+    $('pubText').textContent = 'PUBLICAR SET NO CATÁLOGO';
+    $('cancelEditBtn').classList.add('hidden');
+    stagedCover = ''; stagedLocalBlobUrl = null; stagedDecodedPeaks = null;
+    $('dzPreview').classList.remove('has');
+    $('dzPrompt').style.display = 'block';
+  }
+
+  function parseCues(text) {
+    if (!text) return [];
+    return text.split('\n').map(l => l.trim()).filter(Boolean).map(line => {
+      const m = line.match(/^(\d{1,2}:\d{2}(?::\d{2})?)\s+(.+)$/);
+      if (m) return { timeSec: parseHMS(m[1]), label: `${m[1]} ${sanitize(m[2])}` };
+      return { timeSec: 0, label: sanitize(line) };
+    });
+  }
+
+  async function submitForm(e) {
+    e.preventDefault();
+    const editingId = $('editId').value.trim();
+    const title = sanitize($('fTitle').value);
+    const artist = sanitize($('fArtist').value);
+    const bpm = Number($('fBpm').value) || 150;
+    const key = sanitize($('fKey').value) || 'F Minor';
+    const durSec = parseHMS($('fDuration').value);
+    const tags = $('fTags').value.split(',').map(t => sanitize(t)).filter(Boolean);
+    const cues = parseCues($('fCues').value);
+    const drive = $('fDrive').value.trim();
+    const format = $('fFormat').value;
+    const desc = sanitize($('fDesc').value) || 'Sessão exclusiva Purgatório Under.';
+
+    if (editingId) {
+      const idx = catalog.findIndex(x => x.id === editingId);
+      if (idx !== -1) {
+        catalog[idx] = {
+          ...catalog[idx],
+          title: title.toUpperCase(),
+          artist, bpm, musicalKey: key,
+          durationSeconds: durSec, durationFormatted: fmtHMS(durSec),
+          format, driveUrl: drive,
+          coverUrl: stagedCover || catalog[idx].coverUrl,
+          tags, description: desc, cues,
+          peaks: stagedDecodedPeaks || catalog[idx].peaks,
+          localBlobUrl: stagedLocalBlobUrl || catalog[idx].localBlobUrl
+        };
+      }
+      toast('Set atualizado com sucesso.');
+    } else {
+      const newSet = {
+        id: 'pu-' + Date.now(),
+        title: title.toUpperCase(),
+        artist, bpm, musicalKey: key,
+        durationSeconds: durSec, durationFormatted: fmtHMS(durSec),
+        format, driveUrl: drive,
+        coverUrl: stagedCover || 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80',
+        tags: tags.length ? tags : ['Hard Techno', '+60 Min'],
+        description: desc,
+        cues: cues.length ? cues : [{ timeSec: 0, label: '00:00 Intro' }],
+        peaks: stagedDecodedPeaks || Array.from({ length: 28 }, () => +(0.32 + Math.random() * 0.62).toFixed(2)),
+        localBlobUrl: stagedLocalBlobUrl
+      };
+      catalog.unshift(newSet);
+      activeSetId = newSet.id;
+      toast('Novo set publicado no Master Vault!');
+    }
+    saveCatalog();
+    resetAdminForm();
+    renderChips();
+    renderGrid();
+    updateAllUI();
+  }
+
+  /* ══════════════════════════════════════════════════════════
+     10. EVENTOS E INTERAÇÕES
+     ══════════════════════════════════════════════════════════ */
+  function bindEvents() {
+    // Busca
+    searchEl.oninput = () => {
+      searchQuery = searchEl.value.trim();
+      $('searchClear').classList.toggle('active', !!searchQuery);
+      renderGrid();
+    };
+    $('searchClear').onclick = () => {
+      searchQuery = ''; searchEl.value = '';
+      $('searchClear').classList.remove('active');
+      renderGrid();
+    };
+
+    // Abas e Toggle de Layout (Decks vs Grid)
+    document.querySelectorAll('.tab-pill').forEach(b => {
+      b.onclick = () => {
+        activeTab = b.dataset.tab;
+        document.querySelectorAll('.tab-pill').forEach(x => x.classList.toggle('active', x === b));
+        renderGrid();
+      };
+    });
+    $('viewDeckBtn').onclick = () => {
+      layoutMode = 'decks';
+      $('viewDeckBtn').classList.add('active');
+      $('viewGridBtn').classList.remove('active');
+      renderGrid();
+    };
+    $('viewGridBtn').onclick = () => {
+      layoutMode = 'grid';
+      $('viewGridBtn').classList.add('active');
+      $('viewDeckBtn').classList.remove('active');
+      renderGrid();
+    };
+
+    // Modo do Analisador
+    document.querySelectorAll('.viz-btn').forEach(btn => {
+      btn.onclick = () => {
+        vizMode = btn.dataset.viz;
+        document.querySelectorAll('.viz-btn').forEach(b => b.classList.toggle('active', b === btn));
+      };
+    });
+
+    // Chips
+    chipsEl.onclick = e => {
+      const c = e.target.closest('[data-chip]');
+      if (!c) return;
+      activeChip = c.dataset.chip;
+      renderChips();
+      renderGrid();
+    };
+
+    // Clique na Master Waveform do Hero
+    $('heroWfWrap').onclick = e => {
+      const s = getActive();
+      if (!s) return;
+      const r = $('heroWfWrap').getBoundingClientRect();
+      const ratio = Math.max(0, Math.min(1, (e.clientX - r.left) / r.width));
+      playSet(s.id, Math.floor(ratio * s.durationSeconds));
+    };
+
+    // Delegação de cliques nos Cards do Catálogo
+    gridEl.onclick = e => {
+      const tag = e.target.closest('[data-tag]');
+      if (tag) {
+        searchQuery = tag.dataset.tag;
+        searchEl.value = searchQuery;
+        $('searchClear').classList.add('active');
+        renderGrid();
+        return;
+      }
+      const act = e.target.closest('[data-act]');
+      if (!act) return;
+      const a = act.dataset.act, id = act.dataset.id;
+
+      if (a === 'play') {
+        e.stopPropagation();
+        if (activeSetId === id && isPlaying) pausePlayback();
+        else playSet(id);
+      } else if (a === 'wf-seek') {
+        const s = catalog.find(x => x.id === id);
+        if (!s) return;
+        const r = act.getBoundingClientRect();
+        const ratio = Math.max(0, Math.min(1, (e.clientX - r.left) / r.width));
+        playSet(id, Math.floor(ratio * s.durationSeconds));
+      } else if (a === 'cue') {
+        e.stopPropagation();
+        playSet(id, Number(act.dataset.sec) || 0);
+      } else if (a === 'modal') {
+        openModal(id);
+      } else if (a === 'fav') {
+        e.stopPropagation();
+        if (isFav(id)) favorites = favorites.filter(x => x !== id);
+        else favorites.push(id);
+        try { localStorage.setItem(KEYS.FAVS, JSON.stringify(favorites)); } catch (err) {}
+        renderGrid();
+        toast(isFav(id) ? 'Adicionado aos Favoritos.' : 'Removido dos Favoritos.');
+      } else if (a === 'queue') {
+        e.stopPropagation();
+        if (!queue.includes(id)) queue.push(id);
+        saveQueue();
+        toast('Set adicionado à fila.');
+      } else if (a === 'edit' && isAdmin) {
+        e.stopPropagation();
+        populateFormForEdit(id);
+      } else if (a === 'del' && isAdmin) {
+        e.stopPropagation();
+        if (catalog.length <= 1) { toast('Mantenha pelo menos 1 set no catálogo.', 'error'); return; }
+        pendingDeleteId = id;
+        const target = catalog.find(x => x.id === id);
+        $('deleteModalText').textContent = `Deseja remover "${target ? target.title : 'este set'}" permanentemente?`;
+        $('deleteModal').classList.add('open');
+      }
+    };
+
+    $('confirmDeleteBtn').onclick = () => {
+      if (!pendingDeleteId) return;
+      catalog = catalog.filter(s => s.id !== pendingDeleteId);
+      if (activeSetId === pendingDeleteId) activeSetId = catalog[0].id;
+      pendingDeleteId = null;
+      $('deleteModal').classList.remove('open');
+      saveCatalog(); renderGrid(); updateAllUI();
+      toast('Set removido.');
+    };
+    $('cancelDeleteBtn').onclick = () => { pendingDeleteId = null; $('deleteModal').classList.remove('open'); };
+
+    // Controles Globais
+    $('heroPlay').onclick = togglePlay;
+    $('heroInspect').onclick = () => openModal(activeSetId);
+    $('pPlay').onclick = togglePlay;
+    $('pRew').onclick = () => skip(-30);
+    $('pFwd').onclick = () => skip(60);
+    $('pInfo').onclick = () => openModal(activeSetId);
+    $('pCues').onclick = () => openModal(activeSetId);
+    $('pRate').onclick = () => {
+      const rates = [0.75, 1, 1.25, 1.5];
+      setRate(rates[(rates.indexOf(playbackRate) + 1) % rates.length]);
+    };
+
+    $('pMuteBtn').onclick = () => {
+      isMuted = !isMuted;
+      $('pMuteBtn').textContent = isMuted ? 'MUTE' : 'VOL';
+      $('pMuteBtn').style.color = isMuted ? 'var(--danger)' : 'var(--text-muted)';
+      audioEl.volume = isMuted ? 0 : masterVolume;
+      if (masterGain && audioCtx) masterGain.gain.setTargetAtTime(isMuted ? 0 : masterVolume, audioCtx.currentTime, 0.02);
+    };
+
+    $('pVolume').value = masterVolume;
+    $('pVolume').oninput = e => {
+      isMuted = false;
+      $('pMuteBtn').textContent = 'VOL';
+      masterVolume = parseFloat(e.target.value);
+      audioEl.volume = masterVolume;
+      if (masterGain && audioCtx) masterGain.gain.setTargetAtTime(masterVolume, audioCtx.currentTime, 0.02);
+      saveState();
+    };
+
+    // Timeline Scrubbing no Dock
+    let draggingRail = false;
+    function updateSeekRail(ev) {
+      const r = $('pRail').getBoundingClientRect();
+      const cx = (ev.touches && ev.touches[0]) ? ev.touches[0].clientX : ev.clientX;
+      const ratio = Math.max(0, Math.min(1, (cx - r.left) / r.width));
+      const s = getActive();
+      if (s) seekTo(Math.floor(ratio * s.durationSeconds));
+    }
+    $('pRail').onmousedown = e => { draggingRail = true; updateSeekRail(e); };
+    $('pRail').ontouchstart = e => { draggingRail = true; updateSeekRail(e); };
+    window.addEventListener('mousemove', e => { if (draggingRail) updateSeekRail(e); });
+    window.addEventListener('touchmove', e => { if (draggingRail) updateSeekRail(e); }, { passive: true });
+    window.addEventListener('mouseup', () => draggingRail = false);
+    window.addEventListener('touchend', () => draggingRail = false);
+
+    // Eventos HTML5 Audio
+    audioEl.addEventListener('timeupdate', () => {
+      if (playbackMode === 'stream' && isPlaying) {
+        currentTimeSec = audioEl.currentTime;
+        if (loopState === 2 && loopA !== null && loopB !== null && currentTimeSec >= loopB) {
+          audioEl.currentTime = loopA;
+        }
+        updateProgressUI();
+        saveState();
+      }
+    });
+    audioEl.addEventListener('ended', () => {
+      if (queue.length > 0) nextInQueue();
+      else pausePlayback();
+    });
+
+    // Studio Modal & EQ 3-Band
+    $('dClose').onclick = closeModal;
+    $('dPlay').onclick = () => {
+      if (activeSetId !== modalSetId) playSet(modalSetId, 0);
+      else togglePlay();
+      refreshModalWave();
+    };
+    $('dRew').onclick = () => skip(-30);
+    $('dFwd').onclick = () => skip(60);
+    document.querySelectorAll('.speed').forEach(b => b.onclick = () => setRate(b.dataset.rate));
+
+    $('dLoopBtn').onclick = () => {
+      const s = getActive();
+      if (!s) return;
+      if (loopState === 0) {
+        loopA = currentTimeSec; loopB = null; loopState = 1;
+        $('dLoopBtn').classList.add('active');
+        $('dLoopBtn').textContent = `A: ${fmtHMS(loopA).slice(3)} → B`;
+        toast('Ponto A marcado. Clique novamente para fechar o Loop B.');
+      } else if (loopState === 1) {
+        loopB = currentTimeSec > loopA + 2 ? currentTimeSec : Math.min(s.durationSeconds, loopA + 30);
+        loopState = 2;
+        $('dLoopBtn').textContent = `LOOP ${fmtHMS(loopA).slice(3)}-${fmtHMS(loopB).slice(3)}`;
+        toast('Loop A-B ativo.');
+      } else {
+        resetABLoop();
+        toast('Loop A-B desativado.');
+      }
+      updateProgressUI();
+    };
+
+    function applyEQ() {
+      initAudio();
+      const lv = eqKilled.low ? -36 : +$('eqLow').value;
+      const mv = eqKilled.mid ? -36 : +$('eqMid').value;
+      const hv = eqKilled.high ? -36 : +$('eqHigh').value;
+      $('eqLowL').textContent = eqKilled.low ? 'KILL' : `${lv > 0 ? '+' : ''}${lv}dB`;
+      $('eqMidL').textContent = eqKilled.mid ? 'KILL' : `${mv > 0 ? '+' : ''}${mv}dB`;
+      $('eqHighL').textContent = eqKilled.high ? 'KILL' : `${hv > 0 ? '+' : ''}${hv}dB`;
+      if (eqLowF) eqLowF.gain.setTargetAtTime(lv, audioCtx.currentTime, 0.02);
+      if (eqMidF) eqMidF.gain.setTargetAtTime(mv, audioCtx.currentTime, 0.02);
+      if (eqHighF) eqHighF.gain.setTargetAtTime(hv, audioCtx.currentTime, 0.02);
+    }
+    ['eqLow', 'eqMid', 'eqHigh'].forEach(id => $(id).oninput = applyEQ);
+    document.querySelectorAll('.eq-kill').forEach(btn => {
+      btn.onclick = () => {
+        const band = btn.dataset.kill;
+        eqKilled[band] = !eqKilled[band];
+        btn.classList.toggle('killed', eqKilled[band]);
+        applyEQ();
+      };
+    });
+    $('eqResetBtn').onclick = () => {
+      $('eqLow').value = 0; $('eqMid').value = 0; $('eqHigh').value = 0;
+      eqKilled.low = false; eqKilled.mid = false; eqKilled.high = false;
+      document.querySelectorAll('.eq-kill').forEach(b => b.classList.remove('killed'));
+      applyEQ();
+      toast('Equalizador resetado (Flat 0dB).');
+    };
+
+    // Scrubbing na Waveform Gigante do Studio Modal
+    let draggingWf = false;
+    function wfInteract(ev, seek) {
+      const s = getModal();
+      if (!s) return;
+      const r = $('dWfWrap').getBoundingClientRect();
+      const cx = (ev.touches && ev.touches[0]) ? ev.touches[0].clientX : ev.clientX;
+      const x = Math.max(0, Math.min(r.width, cx - r.left));
+      const ratio = r.width > 0 ? x / r.width : 0;
+      const t = Math.floor(ratio * s.durationSeconds);
+      const cue = (s.cues || []).find(c => Math.abs(c.timeSec - t) <= Math.max(45, s.durationSeconds * 0.018));
+      const tip = $('dTooltip');
+      tip.style.display = 'block'; tip.style.left = `${x}px`;
+      tip.textContent = cue ? `▼ ${cue.label}` : fmtHMS(t);
+      if (seek) {
+        if (activeSetId !== s.id || !isPlaying) playSet(s.id, t);
+        else seekTo(t);
+        refreshModalWave();
+      }
+    }
+    $('dWfWrap').onmousemove = e => wfInteract(e, draggingWf);
+    $('dWfWrap').onmouseleave = () => $('dTooltip').style.display = 'none';
+    $('dWfWrap').onmousedown = e => { draggingWf = true; wfInteract(e, true); };
+    $('dWfWrap').ontouchstart = e => { draggingWf = true; wfInteract(e, true); };
+    window.addEventListener('mouseup', () => draggingWf = false);
+    window.addEventListener('touchend', () => draggingWf = false);
+
+    // Drag & Drop de Capas + Upload de Logo Oficial + Áudio Local
+    const dz = $('dropzone'), fi = $('dzFile');
+    function handleCover(f) {
+      if (!f || !f.type.startsWith('image/')) return;
+      const r = new FileReader();
+      r.onload = ev => {
+        stagedCover = ev.target.result;
+        $('dzImg').src = stagedCover;
+        $('dzPreview').classList.add('has');
+        $('dzPrompt').style.display = 'none';
+      };
+      r.readAsDataURL(f);
+    }
+    dz.onclick = e => { if (e.target !== $('dzRemove')) fi.click(); };
+    dz.ondragover = e => { e.preventDefault(); dz.classList.add('drag'); };
+    dz.ondragleave = () => dz.classList.remove('drag');
+    dz.ondrop = e => { e.preventDefault(); dz.classList.remove('drag'); if (e.dataTransfer.files[0]) handleCover(e.dataTransfer.files[0]); };
+    fi.onchange = e => { if (e.target.files[0]) handleCover(e.target.files[0]); };
+    $('dzRemove').onclick = e => {
+      e.stopPropagation(); stagedCover = '';
+      $('dzPreview').classList.remove('has'); $('dzPrompt').style.display = 'block';
+    };
+
+    $('logoUploadInput').onchange = e => {
+      const f = e.target.files[0];
+      if (!f) return;
+      const r = new FileReader();
+      r.onload = ev => {
+        const dataUrl = ev.target.result;
+        $('brandLogoContainer').innerHTML = `<img src="${dataUrl}" alt="Logo Purgatório Under">`;
+        try { localStorage.setItem(KEYS.LOGO, dataUrl); } catch (err) {}
+        toast('Logo oficial atualizada no cabeçalho!');
+      };
+      r.readAsDataURL(f);
+    };
+
+    $('fLocalFile').onchange = async e => {
+      const f = e.target.files && e.target.files[0];
+      if (!f) return;
+      stagedLocalBlobUrl = URL.createObjectURL(f);
+      toast('Analisando picos de onda reais via Web Audio API...');
+      const decoded = await decodeFileToPeaks(f, 56);
+      if (decoded) {
+        stagedDecodedPeaks = decoded.peaks;
+        $('fDuration').value = fmtHMS(decoded.durationSec);
+        toast('Waveform real decodificada com sucesso!');
+      }
+    };
+
+    // Fila, Admin, Auth & Modais Auxiliares
+    $('queueBtn').onclick = () => { $('queuePanel').classList.toggle('open'); renderQueue(); };
+    $('queueClose').onclick = () => $('queuePanel').classList.remove('open');
+    $('queueClear').onclick = () => { queue = []; saveQueue(); toast('Fila limpa.'); };
+    $('queueList').onclick = e => {
+      const rem = e.target.closest('[data-qrem]');
+      if (rem) { e.stopPropagation(); queue = queue.filter(x => x !== rem.dataset.qrem); saveQueue(); return; }
+      const row = e.target.closest('[data-qid]');
+      if (row) { playSet(row.dataset.qid); $('queuePanel').classList.remove('open'); }
+    };
+
+    $('adminBtn').onclick = openAdminFlow;
+    $('footerAdmin').onclick = e => { e.preventDefault(); openAdminFlow(); };
+    $('closeAdminBtn').onclick = () => { $('adminSection').classList.remove('active'); $('adminBtn').classList.remove('active'); };
+    $('cancelEditBtn').onclick = resetAdminForm;
+    $('publishForm').onsubmit = submitForm;
+
+    $('authClose').onclick = () => $('authModal').classList.remove('open');
+    $('loginForm').onsubmit = e => {
+      e.preventDefault();
+      if ($('loginEmail').value.trim().toLowerCase() === ADMIN_EMAIL && $('loginPass').value === ADMIN_PASS) {
+        isAdmin = true;
+        try { sessionStorage.setItem(KEYS.AUTH, 'true'); } catch (err) {}
+        $('authModal').classList.remove('open');
+        openAdminFlow();
+        renderGrid();
+        toast('Curadoria desbloqueada para purgatoriounder@gmail.com');
+      } else {
+        toast('Acesso exclusivo para purgatoriounder@gmail.com', 'error');
+      }
+    };
+
+    $('exportJsonBtn').onclick = () => {
+      const blob = new Blob([JSON.stringify(catalog, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'purgatorio-under-vault.json';
+      a.click();
+    };
+    $('importJsonBtn').onclick = () => $('importJsonFile').click();
+    $('importJsonFile').onchange = e => {
+      const f = e.target.files[0];
+      if (!f) return;
+      const r = new FileReader();
+      r.onload = ev => {
+        try {
+          const p = JSON.parse(ev.target.result);
+          if (Array.isArray(p) && p.length) {
+            catalog = p; saveCatalog(); renderGrid(); updateAllUI();
+            toast('Catálogo importado!');
+          }
+        } catch (err) { toast('JSON inválido.', 'error'); }
+      };
+      r.readAsText(f);
+    };
+
+    $('gasBtn').onclick = () => $('gasModal').classList.add('open');
+    $('gasClose').onclick = () => $('gasModal').classList.remove('open');
+    $('gasSave').onclick = () => {
+      try { localStorage.setItem(KEYS.GAS, $('gasEndpoint').value.trim()); } catch (err) {}
+      $('gasModal').classList.remove('open');
+      toast('Endpoint Google Sheets salvo.');
+    };
+
+    $('kbdBtn').onclick = () => $('kbdModal').classList.add('open');
+    $('footerKbd').onclick = e => { e.preventDefault(); $('kbdModal').classList.add('open'); };
+    $('kbdClose').onclick = () => $('kbdModal').classList.remove('open');
+
+    $('shuffleBtn').onclick = () => {
+      const ids = catalog.map(s => s.id).sort(() => Math.random() - 0.5);
+      queue = ids.slice(1); saveQueue(); playSet(ids[0]);
+      toast('Shuffle ativado.');
+    };
+
+    $('pSleep').onclick = () => $('sleepModal').classList.add('open');
+    $('sleepClose').onclick = () => $('sleepModal').classList.remove('open');
+    document.querySelectorAll('.sleep-opt').forEach(btn => {
+      btn.onclick = () => {
+        const m = Number(btn.dataset.min) || 30;
+        if (sleepTimerId) clearTimeout(sleepTimerId);
+        sleepTimerId = setTimeout(() => {
+          pausePlayback();
+          $('pSleep').textContent = '💤';
+          toast('Sleep Timer concluído.');
+        }, m * 60000);
+        $('pSleep').textContent = `💤${m}m`;
+        $('sleepModal').classList.remove('open');
+        toast(`Sleep Timer: ${m} min.`);
+      };
+    });
+    $('sleepCancelBtn').onclick = () => {
+      if (sleepTimerId) clearTimeout(sleepTimerId);
+      sleepTimerId = null; $('pSleep').textContent = '💤';
+      $('sleepModal').classList.remove('open');
+    };
+
+    // Atalhos de Teclado
+    document.addEventListener('keydown', e => {
+      const tag = document.activeElement?.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') {
+        if (e.key === 'Escape') document.activeElement.blur();
+        return;
+      }
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault(); searchEl.focus(); return;
+      }
+      const k = e.key;
+      if (k === ' ') { e.preventDefault(); togglePlay(); }
+      else if (k === 'ArrowLeft') { e.preventDefault(); skip(-30); }
+      else if (k === 'ArrowRight') { e.preventDefault(); skip(60); }
+      else if (k === 'c' || k === 'C') openModal(activeSetId);
+      else if (k === 'q' || k === 'Q') { $('queuePanel').classList.toggle('open'); renderQueue(); }
+      else if (k === '/') { e.preventDefault(); searchEl.focus(); }
+      else if (k === 'Escape') {
+        closeModal();
+        ['authModal', 'sleepModal', 'deleteModal', 'gasModal', 'kbdModal'].forEach(id => $(id).classList.remove('open'));
+        $('queuePanel').classList.remove('open');
+      }
+    });
+  }
+
+  /* ══════════════════════════════════════════════════════════
+     11. INICIALIZAÇÃO
+     ══════════════════════════════════════════════════════════ */
+  function init() {
+    loadState();
+    renderChips();
+    bindEvents();
+    renderGrid();
+    updateAllUI();
+    startVisualizers();
+
+    let rz = null;
+    window.addEventListener('resize', () => {
+      clearTimeout(rz);
+      rz = setTimeout(() => { renderGrid(); updateProgressUI(); }, 150);
+    });
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+</script>
+</body>
+</html>
+```
+
+### O que foi transformado neste novo Design (*Luxury Underground Edition*):
+1. **Estética Liquid Chrome & Vidro Fumê (Zero "bordas quadradas de hacker")**:
+   - Fundo em obsidiana abissal (`#030403`) com orbes de luz esmeralda difusos e atmosfera de clube exclusivo.
+   - **Floating Pill Navbar** no topo com vidro fosco (`backdrop-filter: blur(24px)`), busca estilo Spotlight (`⌘K`) e o **Escudo Oficial Cyber-Gótico da Purgatório Under** (além de botão no Admin para subir o arquivo da sua logo oficial).
+2. **Hero Showcase Cinematográfico com Master Waveform Integrada**:
+   - A arte do set em reprodução projeta um brilho difuso no fundo do Hero, acompanhado da **Master Waveform Interativa** pronta para clicar e tocar diretamente no destaque, ao lado do painel de telemetria com **Spectrum**, **Osciloscópio** e **Sub-Bass Radial**.
+3. **Decks Panorâmicos (Estilo SoundCloud Next Pro) + Visão em Grid**:
+   - Cada set no catálogo exibe capa com orbe de play translúcido, waveform espelhada em alta definição com gradiente verde ácido/esmeralda e pílulas de **Cue Points** clicáveis logo abaixo da onda sonora.
+4. **Floating Glass Dock Player**:
+   - Flutuando na parte inferior com cantos arredondados (`26px`), capa com rotação suave de vinil quando ativo, salto rápido (`-30s` / `+1m`), controle de velocidade e acesso imediato ao **Studio EQ & Cues**.
