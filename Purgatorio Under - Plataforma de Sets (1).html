@@ -1880,7 +1880,7 @@ input[type=range].luxury-slider::-webkit-slider-thumb {
 
     <div class="toolbar-right">
       <span id="counter" style="font-family:var(--font-mono);font-size:11px;color:var(--text-muted)">3 SETS DISPONÍVEIS</span>
-      <button type="button" id="shuffleBtn" class="nav-pill-btn" style="height:34px;font-size:10px">🔀 SHUFFLE</button>
+      <button type="button" id="shuffleBtn" class="nav-pill-btn" style="height:34px;font-size:10px">SHUFFLE</button>
       <div class="view-toggle" role="group" aria-label="Alternar visualização">
         <button type="button" class="view-btn active" id="viewDeckBtn" title="Decks Panorâmicos (SoundCloud Pro)">☰ DECKS</button>
         <button type="button" class="view-btn" id="viewGridBtn" title="Grid de Álbuns">⊞ GRID</button>
@@ -1963,7 +1963,7 @@ input[type=range].luxury-slider::-webkit-slider-thumb {
           <button type="button" id="pMuteBtn" style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted);min-width:30px">VOL</button>
           <input type="range" id="pVolume" class="luxury-slider" min="0" max="1" step="0.02" value="0.88" aria-label="Volume">
         </div>
-        <button type="button" id="pSleep" class="dock-icon-btn hide-sm" title="Sleep Timer">💤</button>
+        <button type="button" id="pSleep" class="dock-icon-btn hide-sm" title="Sleep Timer"></button>
         <button type="button" id="pCues" class="dock-icon-btn" style="color:var(--neon);border-color:rgba(57,255,20,0.3)">STUDIO EQ &amp; CUES ↗</button>
       </div>
     </div>
@@ -2066,7 +2066,7 @@ input[type=range].luxury-slider::-webkit-slider-thumb {
 <div id="sleepModal" class="dialog-overlay" role="dialog" aria-modal="true">
   <div class="dialog-card">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
-      <span class="luxury-badge">💤 SLEEP TIMER</span>
+      <span class="luxury-badge">SLEEP TIMER</span>
       <button type="button" id="sleepClose" style="color:var(--text-muted)">✕</button>
     </div>
     <p style="font-size:13px;color:var(--text-muted);margin-bottom:16px">Pausar transmissão automaticamente após:</p>
@@ -3527,17 +3527,17 @@ input[type=range].luxury-slider::-webkit-slider-thumb {
         if (sleepTimerId) clearTimeout(sleepTimerId);
         sleepTimerId = setTimeout(() => {
           pausePlayback();
-          $('pSleep').textContent = '💤';
+          $('pSleep').textContent ='';
           toast('Sleep Timer concluído.');
         }, m * 60000);
-        $('pSleep').textContent = `💤${m}m`;
+        $('pSleep').textContent = `${m}m`;
         $('sleepModal').classList.remove('open');
         toast(`Sleep Timer: ${m} min.`);
       };
     });
     $('sleepCancelBtn').onclick = () => {
       if (sleepTimerId) clearTimeout(sleepTimerId);
-      sleepTimerId = null; $('pSleep').textContent = '💤';
+      sleepTimerId = null; $('pSleep').textContent = '';
       $('sleepModal').classList.remove('open');
     };
 
