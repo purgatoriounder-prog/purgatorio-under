@@ -3602,3 +3602,43 @@ input[type=range].luxury-slider::-webkit-slider-thumb {
    - Cada set no catálogo exibe capa com orbe de play translúcido, waveform espelhada em alta definição com gradiente verde ácido/esmeralda e pílulas de **Cue Points** clicáveis logo abaixo da onda sonora.
 4. **Floating Glass Dock Player**:
    - Flutuando na parte inferior com cantos arredondados (`26px`), capa com rotação suave de vinil quando ativo, salto rápido (`-30s` / `+1m`), controle de velocidade e acesso imediato ao **Studio EQ & Cues**.
+
+name: Deploy static site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Prepare site
+        run: |
+          mkdir -p _site
+          cp "Purgatorio Under - Plataforma de Sets (1).html" _site/index.html
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
